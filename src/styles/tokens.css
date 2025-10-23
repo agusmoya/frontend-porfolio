@@ -1,0 +1,68 @@
+/**
+ * Design Tokens - Material Design 3
+ * Variables CSS globales para el sistema de diseño
+ */
+
+:root {
+  /* === Colores === */
+
+  /* Colores primarios */
+  --color-primary: #6750a4;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #eaddff;
+  --color-on-primary-container: #21005d;
+
+  /* Colores de superficie */
+  --color-surface: #fffbfe;
+  --color-on-surface: #1c1b1f;
+  --color-surface-variant: #e7e0ec;
+  --color-on-surface-variant: #49454f;
+
+  /* Colores de fondo */
+  --color-background: #fffbfe;
+  --color-on-background: #1c1b1f;
+
+  /* === Tipografía === */
+
+  /* Familias de fuente */
+  --font-family-base: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-family-mono: "Courier New", monospace;
+
+  /* Tamaños de fuente (Material Design 3) */
+  --font-size-display-large: 3.5rem; /* 56px */
+  --font-size-display-medium: 2.813rem; /* 45px */
+  --font-size-headline-large: 2rem; /* 32px */
+  --font-size-headline-medium: 1.75rem; /* 28px */
+  --font-size-title-large: 1.375rem; /* 22px */
+  --font-size-body-large: 1rem; /* 16px */
+  --font-size-body-medium: 0.875rem; /* 14px */
+  --font-size-label-large: 0.875rem; /* 14px */
+
+  /* === Espaciado === */
+
+  --spacing-xs: 0.25rem; /* 4px */
+  --spacing-sm: 0.5rem; /* 8px */
+  --spacing-md: 1rem; /* 16px */
+  --spacing-lg: 1.5rem; /* 24px */
+  --spacing-xl: 2rem; /* 32px */
+  --spacing-2xl: 3rem; /* 48px */
+
+  /* === Bordes === */
+
+  --radius-sm: 0.5rem; /* 8px */
+  --radius-md: 0.75rem; /* 12px */
+  --radius-lg: 1rem; /* 16px */
+  --radius-full: 624.9375rem; /* Pill shape */
+
+  /* === Sombras (Material Design 3) === */
+
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+
+  /* === Transiciones === */
+
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 350ms ease;
+}
