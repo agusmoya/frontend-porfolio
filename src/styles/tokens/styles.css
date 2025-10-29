@@ -1,0 +1,50 @@
+:root {
+  --font-weight-bold: 700;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+
+  /* ========== Border ========== */
+  --radius-full: 999rem; /* Pill shape */
+  --radius-lg: 1rem; /* 16px */
+  --radius-md: 0.75rem; /* 12px */
+  --radius-sm: 0.5rem; /* 8px */
+
+  --stroke-width-1: 1px;
+  --stroke-width-2: 2px;
+  --stroke-width-3: 3px;
+
+  --state-layer-hover-opacity: 0.08;
+  --state-layer-focus-opacity: 0.1;
+  --state-layer-pressed-opacity: 0.13;
+  --state-layer-dragged-opacity: 0.16;
+  --state-layer-disabled-opacity: 0.7;
+
+  /* ========== Elevation ========== */
+  --elevation-1:
+    0px 1px 2px 0px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+
+  --elevation-2:
+    0px 1px 2px 0px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+
+  --elevation-3:
+    0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+
+  --elevation-4:
+    0px 6px 10px 4px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.3);
+
+  --elevation-5:
+    0px 8px 12px 6px rgba(0, 0, 0, 0.15), 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+
+  /* ========== Transitions ========== */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 350ms ease;
+
+  /* ========== Zindex ========== */
+  --z-modal: 4;
+  --z-fixed: 3;
+  --z-tooltip: 2;
+  --z-normal: 1;
+  --z-base: 0;
+  --z-deep: -1;
+}

@@ -1,9 +1,10 @@
-function App() {
+import { MainLayout } from './layouts/MainLayout'
+import { Hero } from './pages/Hero'
+
+export default function App() {
   return (
-    <>
-      <h1>PORTFOLIO</h1>
-    </>
+    <MainLayout>
+      <Hero />
+    </MainLayout>
   )
 }
-
-export default App

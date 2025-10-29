@@ -1,0 +1,117 @@
+.btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+  padding: var(--spacing-sm) var(--spacing-md);
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* State layer: pseudo-element that paints hover/focus/pressed */
+.btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: currentColor;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  border-radius: inherit;
+}
+
+.btn:hover::before {
+  opacity: var(--state-layer-hover-opacity);
+}
+
+.btn:focus-visible {
+  outline: var(--stroke-width-2) solid var(--color-outline);
+  outline-offset: var(--stroke-width-1);
+}
+
+.btn:focus-visible::before {
+  opacity: var(--state-layer-focus-opacity);
+}
+
+.btn:active::before {
+  opacity: var(--state-layer-pressed-opacity);
+}
+
+.btn:disabled {
+  opacity: var(--state-layer-disabled-opacity);
+  cursor: not-allowed;
+}
+
+.btn:disabled::before {
+  opacity: 0;
+}
+
+/* content wrapper (icon + text) */
+.btn__content {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: var(--spacing-md);
+  font-size: var(--font-size-label-large);
+}
+
+/* Buttons variants */
+.btn--filled {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+}
+
+.btn--tonal {
+  background-color: var(--color-primary-container);
+  color: var(--color-on-primary-container);
+}
+
+.btn--outlined {
+  background-color: transparent;
+  color: var(--color-primary);
+  border: var(--stroke-width-2) solid var(--color-outline);
+}
+
+.btn--text {
+  border-radius: var(--radius-sm);
+  background-color: transparent;
+}
+
+.btn--icon {
+  background-color: transparent;
+  color: var(--color-on-surface);
+  padding: var(--spacing-xs);
+  border-radius: var(--radius-full);
+}
+
+.btn--elevated {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+  box-shadow: var(--elevation-1);
+  will-change: scale;
+}
+
+.btn--fab {
+  background-color: var(--color-secondary-container);
+  color: var(--color-on-secondary-container);
+  border-radius: var(--radius-full);
+  box-shadow: var(--elevation-1);
+  will-change: scale;
+}
+
+.btn--fab:hover,
+.btn--elevated:hover {
+  box-shadow: var(--elevation-2);
+}
+
+.btn--elevated:not(:disabled):active,
+.btn--fab:not(:disabled):active {
+  scale: 0.99;
+}

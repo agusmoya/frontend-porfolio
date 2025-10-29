@@ -1,0 +1,125 @@
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: var(--elevation-1);
+  background-color: var(--color-surface-rgba);
+  backdrop-filter: blur(10px);
+  transition: box-shadow 0.3s ease;
+  z-index: var(--z-tooltip);
+}
+
+.headerScrolled {
+  box-shadow: var(--elevation-2);
+}
+
+.headerContainer {
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: var(--z-fixed);
+}
+
+.headerMenuButton {
+  display: flex;
+}
+
+.headerNav {
+  background-color: var(--color-surface-rgba);
+  backdrop-filter: blur(10px);
+  padding-inline: var(--spacing-lg);
+  padding-block: var(--spacing-sm);
+
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: var(--z-fixed);
+
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+
+  opacity: 0;
+  transform: translateY(-10px);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.headerNav a {
+  padding-block: var(--spacing-sm);
+  padding-inline: var(--spacing-md);
+  border-radius: var(--radius-sm);
+}
+
+.headerNav a:hover {
+  background-color: var(--color-surface-variant);
+}
+
+.headerNavOpen {
+  pointer-events: auto;
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* === */
+.iconContainer {
+  position: relative;
+  display: inline-flex;
+  width: 24px;
+  height: 24px;
+}
+
+.menuIcon,
+.closeIcon {
+  position: absolute;
+  inset: 0;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.menuIcon {
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+}
+
+.closeIcon {
+  opacity: 0;
+  transform: rotate(-90deg) scale(0.5);
+}
+
+.headerMenuButton[aria-expanded='true'] .menuIcon {
+  opacity: 0;
+  transform: rotate(90deg) scale(0.5);
+}
+
+.headerMenuButton[aria-expanded='true'] .closeIcon {
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+}
+
+@media (min-width: 600px) {
+  .headerMenuButton {
+    display: none;
+  }
+
+  .headerNav {
+    transform: none;
+    opacity: 1;
+    position: static;
+
+    background-color: transparent;
+    backdrop-filter: none;
+
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    pointer-events: auto;
+  }
+}

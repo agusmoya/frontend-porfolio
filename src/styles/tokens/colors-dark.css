@@ -1,0 +1,38 @@
+[data-theme='dark'] {
+  --color-primary: rgb(229 182 242);
+  --color-surface-tint: rgb(229 182 242);
+  --color-on-primary: rgb(69 33 82);
+  --color-primary-container: rgb(93 56 106);
+  --color-on-primary-container: rgb(249 216 255);
+
+  --color-secondary: rgb(213 192 215);
+  --color-on-secondary: rgb(57 44 61);
+  --color-secondary-container: rgb(81 66 84);
+  --color-on-secondary-container: rgb(242 220 243);
+
+  --color-tertiary: rgb(245 183 179);
+  --color-on-tertiary: rgb(76 37 35);
+  --color-tertiary-container: rgb(102 59 57);
+  --color-on-tertiary-container: rgb(255 218 215);
+
+  --color-error: rgb(255 180 171);
+  --color-on-error: rgb(105 0 5);
+  --color-error-container: rgb(147 0 10);
+  --color-on-error-container: rgb(255 218 214);
+
+  --color-background: rgb(22 18 23);
+  --color-on-background: rgb(234 224 231);
+
+  --color-surface: rgb(22 18 23);
+  --color-surface-rgba: rgba(22, 18, 23, 0.75);
+  --color-on-surface: rgb(234 224 231);
+
+  --color-surface-variant: rgb(76 68 77);
+  --color-on-surface-variant: rgb(207 195 205);
+
+  --color-outline: rgb(152 142 151);
+  --color-outline-variant: rgb(76 68 77);
+
+  --color-shadow: rgb(0 0 0);
+  --color-scrim: rgb(0 0 0);
+}
