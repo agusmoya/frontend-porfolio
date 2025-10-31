@@ -10,6 +10,17 @@
   z-index: var(--z-tooltip);
 }
 
+.headerExtras,
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.logo {
+  font-weight: bold;
+}
+
 .headerScrolled {
   box-shadow: var(--elevation-2);
 }

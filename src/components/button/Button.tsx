@@ -2,7 +2,7 @@ import React from 'react'
 
 import clsx from 'clsx'
 
-import { VARIANT, type VariantType } from '../../types/button/button'
+import { VARIANT, type VariantType } from '../../types/button'
 
 import styles from './Button.module.css'
 

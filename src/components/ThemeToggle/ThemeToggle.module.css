@@ -1,7 +1,3 @@
-.buttonTheme:hover {
-  outline: var(--stroke-width-1) solid var(--color-outline);
-}
-
 .buttonThemeIcon {
   display: inline-block;
   transition:

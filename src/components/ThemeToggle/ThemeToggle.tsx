@@ -1,7 +1,7 @@
 import clsx from 'clsx'
 import { useTheme } from '../../hooks/useTheme'
 import { Button } from '../button/Button'
-import { MoonIcon, SunIcon } from '../Icons/Icons'
+import { MoonIcon, SunIcon } from '../icons/Icons'
 
 import styles from './ThemeToggle.module.css'
 

@@ -1,0 +1,95 @@
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-xl);
+  min-height: calc(100dvh - var(--header-height));
+  padding-block: var(--spacing-xl);
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: var(--spacing-xl);
+}
+
+.avatarContainer {
+  background-image: url('../../assets/shape.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  mask-image: linear-gradient(to bottom, black 0%, black 85%, transparent 100%);
+  /* Safari */
+  -webkit-mask-image: linear-gradient(to bottom, black 0%, black 85%, transparent 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  margin-bottom: var(--spacing-md);
+  background: linear-gradient(
+    135deg,
+    var(--color-primary) 0%,
+    var(--color-tertiary) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 200%;
+  animation: gradientShift 3s ease infinite;
+}
+
+@keyframes gradientShift {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.description {
+  font-size: var(--font-size-body-large);
+  line-height: 1.7;
+  color: var(--color-on-surface-variant);
+}
+
+.skills {
+  margin-top: var(--spacing-2xl);
+}
+
+.skillsTitle {
+  font-size: var(--font-size-title-large);
+  margin-bottom: var(--spacing-lg);
+  color: var(--color-on-surface);
+  text-align: center;
+}
+
+.skillsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  justify-content: center;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .about {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-2xl);
+  }
+
+  .details {
+    flex-direction: row;
+    text-wrap-style: balance;
+    text-align: left;
+  }
+}

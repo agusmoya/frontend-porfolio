@@ -1,0 +1,11 @@
+.toggle {
+  padding: var(--spacing-sm);
+  border: 1px dashed var(--color-outline);
+}
+
+.iconWrapper {
+  display: flex;
+  gap: var(--spacing-xs);
+  align-items: center;
+  justify-content: center;
+}
