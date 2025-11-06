@@ -31,5 +31,5 @@ export const useTranslation = () => {
     [translations]
   )
 
-  return { t, language, setLanguage }
+  return { t, language, translations, setLanguage }
 }

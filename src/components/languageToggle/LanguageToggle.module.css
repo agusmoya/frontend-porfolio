@@ -1,6 +1,6 @@
 .toggle {
   padding: var(--spacing-sm);
-  border: 1px dashed var(--color-outline);
+  border: var(--stroke-width-1) dashed var(--color-outline);
 }
 
 .iconWrapper {

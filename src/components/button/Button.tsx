@@ -1,30 +1,22 @@
-import React from 'react'
-
 import clsx from 'clsx'
 
-import { VARIANT, type VariantType } from '../../types/button'
+import { VARIANT, type ButtonProps } from './buttonType'
 
 import styles from './Button.module.css'
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: VariantType
-  disabled?: boolean
-  children: React.ReactNode
-  type?: 'button' | 'submit' | 'reset'
-}
-
-export const Button: React.FC<ButtonProps> = ({
+export const Button = ({
   variant = VARIANT.filled,
   type = 'button',
   disabled = false,
+  loading = false,
   children,
   className,
   ...props
-}) => {
+}: ButtonProps) => {
   const classNames = clsx(
     styles.btn,
     styles[`btn--${variant}`],
-    disabled && styles['btn--disabled'],
+    (disabled || loading) && styles['btn--disabled'],
     className
   )
 

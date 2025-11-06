@@ -1,7 +1,15 @@
 :root {
-  --font-weight-bold: 700;
-  --font-weight-medium: 500;
-  --font-weight-normal: 400;
+  /* ========== Stroke  ========== */
+  --stroke-width-3: 3px;
+  --stroke-width-2: 2px;
+  --stroke-width-1: 1px;
+
+  /* ========== State Layer ========== */
+  --state-layer-hover-opacity: 0.08;
+  --state-layer-focus-opacity: 0.1;
+  --state-layer-pressed-opacity: 0.13;
+  --state-layer-dragged-opacity: 0.16;
+  --state-layer-disabled-opacity: 0.7;
 
   /* ========== Border ========== */
   --radius-full: 999rem; /* Pill shape */
@@ -9,31 +17,22 @@
   --radius-md: 0.75rem; /* 12px */
   --radius-sm: 0.5rem; /* 8px */
 
-  --stroke-width-1: 1px;
-  --stroke-width-2: 2px;
-  --stroke-width-3: 3px;
-
-  --state-layer-hover-opacity: 0.08;
-  --state-layer-focus-opacity: 0.1;
-  --state-layer-pressed-opacity: 0.13;
-  --state-layer-dragged-opacity: 0.16;
-  --state-layer-disabled-opacity: 0.7;
-
   /* ========== Elevation ========== */
-  --elevation-1:
-    0px 1px 2px 0px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+  --elevation-1: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+  --elevation-2: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+  --elevation-3: 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+  --elevation-4: 0px 6px 10px 4px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.3);
+  --elevation-5: 0px 8px 12px 6px rgba(0, 0, 0, 0.15), 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
 
-  --elevation-2:
-    0px 1px 2px 0px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+  /* ========== Scale ========== */
+  --scale-base: 1;
 
-  --elevation-3:
-    0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+  --scale-grow-1: 1.01;
+  --scale-grow-2: 1.02;
+  --scale-grow-3: 1.03;
 
-  --elevation-4:
-    0px 6px 10px 4px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.3);
-
-  --elevation-5:
-    0px 8px 12px 6px rgba(0, 0, 0, 0.15), 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+  --scale-shrink-1: 0.99;
+  --scale-shrink-2: 0.5;
 
   /* ========== Transitions ========== */
   --transition-fast: 150ms ease;
@@ -47,4 +46,8 @@
   --z-normal: 1;
   --z-base: 0;
   --z-deep: -1;
+
+  /* ========== Scroll bar ========== */
+  --scrollbar-thumb-color: hsla(0, 0%, 39%, 0.8);
+  --scrollbar-thumb-color-darker: hsla(0, 0%, 39%, 0.5);
 }

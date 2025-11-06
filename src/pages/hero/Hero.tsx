@@ -1,8 +1,10 @@
 import Typewriter from 'typewriter-effect'
-import { Button } from '../../components/button/Button'
+
+import { ButtonLink } from '../../components/link/Link'
 import { useTranslation } from '../../i18n/LanguageContext'
 
 import styles from './Hero.module.css'
+import { VARIANT } from '../../components/button/buttonType'
 
 export function Hero() {
   const { t } = useTranslation()
@@ -29,8 +31,20 @@ export function Hero() {
         </h2>
         <p className={styles.description}>{t('hero.description')}</p>
         <div className={styles.ctaContainer}>
-          <Button variant="elevated">{t('hero.cta')}</Button>
-          <Button variant="outlined">{t('hero.contact')}</Button>
+          <ButtonLink
+            href="#projects"
+            variant={VARIANT.elevated}
+            aria-label={t('hero.cta')}
+          >
+            {t('hero.cta')}
+          </ButtonLink>
+          <ButtonLink
+            href="#contact"
+            variant={VARIANT.outlined}
+            aria-label={t('hero.contact')}
+          >
+            {t('hero.contact')}
+          </ButtonLink>
         </div>
       </div>
     </section>

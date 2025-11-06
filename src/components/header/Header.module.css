@@ -6,7 +6,7 @@
   box-shadow: var(--elevation-1);
   background-color: var(--color-surface-rgba);
   backdrop-filter: blur(10px);
-  transition: box-shadow 0.3s ease;
+  transition: box-shadow var(--transition-base);
   z-index: var(--z-tooltip);
 }
 
@@ -18,7 +18,7 @@
 }
 
 .logo {
-  font-weight: bold;
+  font-weight: var(--font-weight-9);
 }
 
 .headerScrolled {
@@ -57,8 +57,8 @@
   opacity: 0;
   transform: translateY(-10px);
   transition:
-    opacity 0.3s ease,
-    transform 0.3s ease;
+    opacity var(--transition-base),
+    transform var(--transition-base);
 }
 
 .headerNav a {
@@ -78,7 +78,6 @@
   transform: translateY(0);
 }
 
-/* === */
 .iconContainer {
   position: relative;
   display: inline-flex;
@@ -91,28 +90,28 @@
   position: absolute;
   inset: 0;
   transition:
-    opacity 0.3s ease,
+    opacity var(--transition-base),
     transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .menuIcon {
   opacity: 1;
-  transform: rotate(0deg) scale(1);
+  transform: rotate(0deg) scale(var(--scale-base));
 }
 
 .closeIcon {
   opacity: 0;
-  transform: rotate(-90deg) scale(0.5);
+  transform: rotate(-90deg) scale(var(--scale-shrink-2));
 }
 
 .headerMenuButton[aria-expanded='true'] .menuIcon {
   opacity: 0;
-  transform: rotate(90deg) scale(0.5);
+  transform: rotate(90deg) scale(var(--scale-shrink-2));
 }
 
 .headerMenuButton[aria-expanded='true'] .closeIcon {
   opacity: 1;
-  transform: rotate(0deg) scale(1);
+  transform: rotate(0deg) scale(var(--scale-base));
 }
 
 @media (min-width: 600px) {

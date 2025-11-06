@@ -1,3 +1,4 @@
+/* (Material Design 3) */
 @import './styles/reset.css';
 
 @import './styles/tokens/colors-light.css';
@@ -5,5 +6,6 @@
 @import './styles/tokens/typography.css';
 @import './styles/tokens/spacing.css';
 @import './styles/tokens/styles.css';
+@import './styles/tokens/browserFixes.css';
 
 @import './styles/global.css';

@@ -9,3 +9,11 @@ export const VARIANT = {
 } as const
 
 export type VariantType = (typeof VARIANT)[keyof typeof VARIANT]
+
+export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  variant?: VariantType
+  disabled?: boolean
+  loading?: boolean
+  children: React.ReactNode
+  type?: 'button' | 'submit' | 'reset'
+}

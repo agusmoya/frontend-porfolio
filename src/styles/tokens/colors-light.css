@@ -36,4 +36,6 @@
 
   --color-shadow: rgb(0 0 0);
   --color-scrim: rgb(0 0 0);
+
+  --color-success: hsl(145, 60%, 25%);
 }

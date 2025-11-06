@@ -7,27 +7,34 @@
 }
 
 html {
-  /* Mejora el renderizado de fuentes */
+  /* Improve font rendering */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 body {
   min-height: 100vh;
-  line-height: 1.5;
+  min-height: 100dvh;
+  line-height: var(--line-height-5);
 }
 
-/* Elementos multimedia responsivos */
+ul,
+ol {
+  list-style: none;
+  overflow: hidden;
+}
+
 img,
 picture,
 video,
 canvas,
 svg {
-  display: block;
   max-width: 100%;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-/* Herencia de fuentes en controles de formulario */
 input,
 button,
 textarea,
@@ -45,7 +52,6 @@ button {
   cursor: pointer;
 }
 
-/* Evita desbordamiento de texto */
 p,
 h1,
 h2,

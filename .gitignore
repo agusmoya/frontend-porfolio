@@ -1,6 +1,9 @@
 #copilot instructions
 .github
 
+# env
+.env
+
 # Logs
 logs
 *.log

@@ -1,0 +1,87 @@
+.textareaWrapper {
+  position: relative;
+}
+
+.textareaLabel {
+  font-size: var(--font-size-body-medium);
+  color: var(--color-on-surface-variant);
+  left: var(--spacing-md);
+  margin-bottom: var(--spacing-xs);
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  transition:
+    transform var(--transition-slow),
+    font-size var(--transition-base),
+    color var(--transition-base);
+}
+
+.textareaField {
+  font-weight: var(--font-weight-4);
+  width: 100%;
+  color: var(--color-on-surface);
+  background-color: var(--color-surface-variant);
+  resize: none;
+  min-height: 1rem;
+  padding-block: var(--spacing-xl) var(--spacing-md);
+  padding-inline: var(--spacing-md) var(--spacing-xl);
+  border-radius: var(--radius-md);
+  transition: border-color var(--transition-base);
+}
+
+.textareaField:focus {
+  outline: var(--stroke-width-2) solid var(--color-on-surface);
+}
+
+.textareaField::placeholder {
+  font-size: var(--font-size-body-small);
+}
+
+.textareaField:focus + .textareaLabel {
+  color: var(--color-on-surface);
+}
+
+.textareaField:focus,
+.textareaField:not(:placeholder-shown):not(:focus) {
+  padding-block: var(--spacing-xl) var(--spacing-md);
+}
+
+.textareaField:focus ~ .textareaLabel,
+.textareaField:not(:placeholder-shown):not(:focus) ~ .textareaLabel {
+  transform: translateY(-50px);
+  font-size: var(--font-size-body-small);
+  color: var(--color-on-surface);
+}
+
+.textareaField:focus:not(.textareaFieldError) {
+  outline-color: var(--color-on-surface);
+}
+
+.textareaFieldError {
+  outline: var(--stroke-width-2) solid var(--color-error);
+}
+
+.textareaFieldDisabled {
+  opacity: var(--state-layer-disabled-opacity);
+  cursor: not-allowed;
+}
+
+.textareaFeedback {
+  height: 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.textareaHint {
+  color: var(--color-outline);
+  font-size: var(--font-size-body-small);
+}
+
+.textareaErrorMessage {
+  color: var(--color-error);
+  font-size: var(--font-size-body-small);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
