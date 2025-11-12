@@ -33,21 +33,21 @@ export const en = {
     knowledgeEducation: 'Education',
     experience: [
       {
-        title: 'Fullstack Developer',
+        title: 'Fullstack Developer (Frontend-oriented)',
         company: 'Personal Project',
         period: 'December 2024 - Present',
         description:
           'Development (in progress) of an application focused on task and calendar event management, with real-time notifications and user collaboration.',
       },
       {
-        title: 'Semi-senior Fullstack Developer (Frontend-oriented)',
+        title: 'Fullstack Developer (Frontend-oriented)',
         company: 'SanCor Salud - Grupo de Medicina Privada',
         period: 'December 2022 - December 2024',
         description:
           'I carried out tasks for implementing solutions, creating new features, and refactoring legacy code, working collaboratively with users and development teams. Advising team members and conducting daily code reviews.',
       },
       {
-        title: 'Junior Fullstack Developer',
+        title: 'Fullstack Developer',
         company: 'ADEN Business School',
         period: 'November 2021 - November 2022',
         description:
@@ -85,7 +85,8 @@ export const en = {
       {
         id: 'project-1',
         title: 'EvenTask App',
-        description: 'Full-stack application for managing tasks and calendar events.',
+        description:
+          'Full-stack application for managing tasks, calendar events, real-time notifications, and user collaboration.',
         image: projectEvenTaskImg,
         tags: ['React', 'TypeScript', 'Node.js'],
         demoUrl: 'https://schedule-task-manager.vercel.app/',
@@ -96,7 +97,7 @@ export const en = {
         id: 'project-2',
         title: 'High Performance Sports Portfolio',
         description:
-          "A professional portfolio showcasing the user's work, experience, and projects.",
+          "A professional portfolio that showcases the user's work, experience, and knowledge.",
         image: '/task-manager.png',
         tags: ['React', 'TypeScript', 'Node.js'],
         demoUrl: 'https://portfolio-pedro-cazorla.netlify.app/',

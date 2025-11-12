@@ -91,6 +91,7 @@ input {
 .section {
   padding-block: var(--spacing-2xl);
   min-height: auto;
+  scroll-margin-top: var(--header-height); /* Offset for sticky header */
 }
 
 .section-title {

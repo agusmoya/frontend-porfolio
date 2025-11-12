@@ -1,10 +1,10 @@
 .heroSection {
-  /* for AnimatedBlobs */
   position: relative;
   overflow: hidden;
 }
 
 .blobsContainer {
+  display: none;
   position: absolute;
   inset: 0;
   z-index: var(--z-deep);
@@ -25,10 +25,12 @@
 }
 
 h1.titleHero {
-  font-weight: var(--font-weight-9);
+  text-wrap: balance;
+  font-weight: var(--font-weight-7);
   font-size: var(--font-size-display-medium);
   max-width: 70%;
   animation: fadeInUp 0.8s ease-out 0.3s both;
+  margin-bottom: 0;
 }
 
 .titleName {
@@ -37,7 +39,7 @@ h1.titleHero {
   -webkit-background-clip: initial;
   -webkit-text-fill-color: initial;
   color: var(--color-on-surface);
-  font-weight: var(--font-weight-9);
+  font-weight: var(--font-weight-7);
   font-size: var(--font-size-display-large);
   position: relative;
   display: inline-block;
@@ -57,7 +59,7 @@ h1.titleHero {
 }
 
 .subtitle {
-  color: var(--color-tertiary);
+  color: var(--color-on-surface);
   animation: fadeInUp 0.8s ease-out 0.4s both;
   min-height: clamp(5.125rem, 15vh, 8rem);
   display: flex;
@@ -69,7 +71,7 @@ h1.titleHero {
   font-weight: var(--font-weight-4);
   font-size: var(--font-size-title-medium);
   animation: fadeInUp 0.8s ease-out 0.5s both;
-  max-width: 70%;
+  max-width: 85%;
   text-wrap: pretty;
 }
 
@@ -110,6 +112,12 @@ h1.titleHero {
   }
   to {
     width: 100%;
+  }
+}
+
+@media (min-width: 480px) {
+  .blobsContainer {
+    display: block;
   }
 }
 

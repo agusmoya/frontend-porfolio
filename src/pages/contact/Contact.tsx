@@ -16,7 +16,7 @@ import styles from './Contact.module.css'
 
 export const Contact = () => {
   const {
-    DEV,
+    // DEV,
     VITE_EMAILJS_SERVICE_ID,
     VITE_EMAILJS_TEMPLATE_ID,
     VITE_EMAILJS_PUBLIC_KEY,
@@ -62,7 +62,8 @@ export const Contact = () => {
       setFormData({ name: '', email: '', message: '' })
     } catch (error) {
       setStatus('error')
-      if (DEV) console.error('❌ Error al enviar email:', error)
+      // if (DEV)
+      console.error('❌ Error al enviar email:', error)
     } finally {
       setIsLoading(false)
     }
@@ -93,7 +94,7 @@ export const Contact = () => {
         opacity={0.5}
       />
       <div className={`container ${styles.contactContainer}`}>
-        <h2 className={styles.title}>{t('contact.title')}</h2>
+        <h2 className={`section-title ${styles.title}`}>{t('contact.title')}</h2>
         <p className={styles.description}>{t('contact.description')}</p>
         <div className={styles.contactContent}>
           <form ref={formRef} className={`${styles.contactForm}`} onSubmit={handleSubmit}>

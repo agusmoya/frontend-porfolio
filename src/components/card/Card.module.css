@@ -8,6 +8,7 @@
     transform var(--transition-base),
     box-shadow var(--transition-base);
   animation: fadeInUp 0.6s ease-out backwards;
+  min-height: 100%;
 }
 
 @keyframes fadeInUp {
@@ -22,7 +23,7 @@
 }
 
 .card:hover {
-  box-shadow: var(--elevation-3);
+  box-shadow: var(--elevation-2);
 }
 
 .cardImage {
@@ -34,6 +35,8 @@
 }
 
 .cardImage img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center;
   transition: transform var(--transition-base);
@@ -123,6 +126,8 @@
 .cardContent {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
   gap: var(--spacing-sm);
   padding: var(--spacing-lg);
 }
@@ -131,6 +136,7 @@
   font-weight: var(--font-weight-6);
   line-height: var(--line-height-3);
   font-size: var(--font-size-title-large);
+  margin-bottom: var(--spacing-sm);
 }
 
 .cardDescription {

@@ -52,46 +52,44 @@ export const Projects = () => {
   return (
     <section id="projects" className={`section ${styles.projectsSection}`}>
       <div className={`container ${styles.projectsContainer}`}>
-        <h2 className={styles.title}>{t('projects.title')}</h2>
-        <div className={styles.carrouselContainer}>
-          <div
-            ref={carouselRef}
-            className={styles.carousel}
-            onKeyDown={handleKeyDown}
-            tabIndex={0}
-            role="region"
-            aria-label="Projects carousel"
-          >
-            {projects.map((p, index) => {
-              return (
-                <div key={p.id} className={styles.carouselItem}>
-                  <CardProject
-                    key={p.id}
-                    index={index}
-                    title={p.title}
-                    description={p.description}
-                    image={p.image}
-                    tags={p.tags}
-                    demoUrl={p.demoUrl}
-                    repoBackendUrl={p.repoBackendUrl}
-                    repoFrontendUrl={p.repoFrontendUrl}
-                  />
-                </div>
-              )
-            })}
-          </div>
+        <h2 className={`section-title ${styles.title}`}>{t('projects.title')}</h2>
+        <div
+          ref={carouselRef}
+          className={styles.carousel}
+          onKeyDown={handleKeyDown}
+          tabIndex={0}
+          role="region"
+          aria-label="Projects carousel"
+        >
+          {projects.map((p, index) => {
+            return (
+              <div key={p.id} className={styles.carouselItem}>
+                <CardProject
+                  key={p.id}
+                  index={index}
+                  title={p.title}
+                  description={p.description}
+                  image={p.image}
+                  tags={p.tags}
+                  demoUrl={p.demoUrl}
+                  repoBackendUrl={p.repoBackendUrl}
+                  repoFrontendUrl={p.repoFrontendUrl}
+                />
+              </div>
+            )
+          })}
+        </div>
 
-          <div className={styles.indicators}>
-            {projects.map((_, index) => (
-              <button
-                key={index}
-                className={`${styles.indicator} ${index === activeIndex ? styles.indicatorActive : ''}`}
-                onClick={() => scrollToSlide(index)}
-                aria-label={`Go to project ${index + 1}`}
-                aria-current={index === activeIndex}
-              />
-            ))}
-          </div>
+        <div className={styles.indicators}>
+          {projects.map((_, index) => (
+            <button
+              key={index}
+              className={`${styles.indicator} ${index === activeIndex ? styles.indicatorActive : ''}`}
+              onClick={() => scrollToSlide(index)}
+              aria-label={`Go to project ${index + 1}`}
+              aria-current={index === activeIndex}
+            />
+          ))}
         </div>
       </div>
     </section>
