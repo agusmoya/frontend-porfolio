@@ -2,13 +2,16 @@ import projectEvenTaskImg from '../../assets/projects/project-1.webp'
 // import projectPortfolioImg from '../../assets/projects/project-2.webp'
 
 export const es = {
+  user: {
+    name: 'Agustín',
+  },
   header: {
     about: 'Sobre mí',
     projects: 'Proyectos',
     contact: 'Contacto',
   },
   hero: {
-    title: 'Hola, mi nombre es Agustín',
+    title: 'Hola, mi nombre es',
     subtitleTypewriter: {
       opt1: 'Desarrollador Frontend',
       opt2: 'Entusiasta de React',
@@ -16,13 +19,15 @@ export const es = {
     },
     description: 'Enfocado en crear interfaces limpias, accesibles y atractivas.',
     contact: 'Contáctame',
-    cta: 'Ver proyectos',
+    projects: 'Ver proyectos',
   },
   about: {
     title: 'Sobre mí',
-    presentation:
-      'Soy Frontend Developer con más de tres años de experiencia en desarrollo web, especializado en React, TypeScript, HTML y CSS. Me apasiona el diseño y la creación de interfaces de usuario atractivas, funcionales y accesibles, aplicando principios del UX/UI Design.',
-    skills: 'Habilidades',
+    presentation: {
+      p1: 'Soy Frontend Developer con más de tres años de experiencia en desarrollo web, especializado en React, TypeScript, HTML y CSS.',
+      p2: 'Me gusta diseñar y crear interfaces de usuario atractivas, funcionales y accesibles, aplicando los principios de diseño UX/UI.',
+    },
+    technologies: 'Habilidades',
     knowledgeTitle: 'Conocimientos y Formación',
     knowledgeExperience: 'Experiencia',
     knowledgeEducation: 'Educación',
@@ -109,6 +114,9 @@ export const es = {
     sending: 'Enviando...',
     success: 'Mensaje enviado correctamente. Te responderé en breve.',
     error: 'Error al enviar el mensaje. Inténtalo de nuevo.',
+    emailAddress: 'agustin.moya.dev@gmail.com',
+    contactOptionEmail:
+      'O puedes copiar mi correo y enviar tu mensaje desde donde prefieras:',
   },
   footer: {
     year: '2025',

@@ -1,13 +1,16 @@
 import projectEvenTaskImg from '../../assets/projects/project-1.webp'
 
 export const en = {
+  user: {
+    name: 'Agustín',
+  },
   header: {
     about: 'About',
     projects: 'Projects',
     contact: 'Contact',
   },
   hero: {
-    title: 'Hi, my name is Agustín',
+    title: 'Hi, my name is',
     subtitleTypewriter: {
       opt1: 'Frontend Developer',
       opt2: 'React Enthusiast',
@@ -16,13 +19,15 @@ export const en = {
     contact: 'Contact me',
     description:
       'Focused on building clean, accessible, and visually appealing interfaces.',
-    cta: 'See projects',
+    projects: 'See projects',
   },
   about: {
     title: 'About Me',
-    presentation:
-      'I am a Frontend Developer with over three years of experience in web development, specializing in React, TypeScript, HTML, and CSS. I am passionate about design and creating attractive, functional, and accessible user interfaces, applying principles of UX/UI Design.',
-    skills: 'Skills',
+    presentation: {
+      p1: 'I am a Frontend Developer with over three years of experience in web development, specializing in React, TypeScript, HTML, and CSS.',
+      p2: 'I enjoy designing and creating attractive, functional, and accessible user interfaces, applying UX/UI design principles.',
+    },
+    technologies: 'Technologies',
     knowledgeTitle: 'Knowledge & Background',
     knowledgeExperience: 'Experience',
     knowledgeEducation: 'Education',
@@ -109,6 +114,9 @@ export const en = {
     sending: 'Sending...',
     success: 'Message sent successfully. I will get back to you shortly.',
     error: 'Failed to send message. Please try again.',
+    emailAddress: 'agustin.moya.dev@gmail.com',
+    contactOptionEmail:
+      'Or you can copy my email and send your message from wherever you prefer:',
   },
   footer: {
     year: '2025',

@@ -28,8 +28,8 @@
   --scale-base: 1;
 
   --scale-grow-1: 1.01;
-  --scale-grow-2: 1.02;
-  --scale-grow-3: 1.03;
+  --scale-grow-2: 1.05;
+  --scale-grow-3: 1.1;
 
   --scale-shrink-1: 0.99;
   --scale-shrink-2: 0.5;

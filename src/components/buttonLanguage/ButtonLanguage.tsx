@@ -2,9 +2,9 @@ import { useTranslation } from '../../i18n/LanguageContext'
 import { Button } from '../button/Button'
 import { LanguageIcon } from '../icons/Icons'
 
-import styles from './LanguageToggle.module.css'
+import styles from './ButtonLanguage.module.css'
 
-export const LanguageToggle = () => {
+export const ButtonLanguage = () => {
   const { language, setLanguage } = useTranslation()
 
   const toggleLanguage = () => {
@@ -13,15 +13,14 @@ export const LanguageToggle = () => {
 
   return (
     <Button
-      className={styles.toggle}
-      variant="text"
+      size="md"
+      className={styles.languageBtn}
+      variant="outlined"
       onClick={toggleLanguage}
       aria-label="Change language"
     >
-      <div className={styles.iconWrapper}>
-        <LanguageIcon />
-        <span>{language === 'en' ? 'ES' : 'EN'}</span>
-      </div>
+      <LanguageIcon />
+      <span>{language === 'en' ? 'ES' : 'EN'}</span>
     </Button>
   )
 }

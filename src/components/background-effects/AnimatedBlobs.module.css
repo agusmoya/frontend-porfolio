@@ -1,0 +1,52 @@
+.blobAnimateRight,
+.blobAnimateLeft {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(var(--blob-x), var(--blob-y));
+  background: linear-gradient(
+    90deg,
+    var(--color-secondary) 20%,
+    var(--color-secondary-container) 100%
+  );
+  border-radius: var(--radius-full);
+  pointer-events: none;
+}
+
+.blobAnimateRight {
+  animation: blobRotateRight 5s linear infinite;
+}
+
+.blobAnimateLeft {
+  animation: blobRotateLeft 5s linear infinite;
+}
+
+@keyframes blobRotateRight {
+  0% {
+    transform: translate(var(--blob-x), var(--blob-y)) rotate(0);
+  }
+  50% {
+    transform: translate(var(--blob-x), var(--blob-y)) rotate(180deg);
+  }
+  75% {
+    transform: translate(var(--blob-x), var(--blob-y)) rotate(270deg);
+  }
+  100% {
+    transform: translate(var(--blob-x), var(--blob-y)) rotate(360deg);
+  }
+}
+
+@keyframes blobRotateLeft {
+  0% {
+    transform: translate(var(--blob-x), var(--blob-y)) rotate(0) scale(1);
+  }
+  50% {
+    transform: translate(var(--blob-x), var(--blob-y)) rotate(-180deg) scale(1.1);
+  }
+  75% {
+    transform: translate(var(--blob-x), var(--blob-y)) rotate(-270deg) scale(1.2);
+  }
+  100% {
+    transform: translate(var(--blob-x), var(--blob-y)) rotate(-360deg) scale(1);
+  }
+}

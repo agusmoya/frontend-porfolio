@@ -1,0 +1,16 @@
+.wavesSvg {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: var(--z-deep);
+  pointer-events: none;
+}
+
+.wavesSvg--top {
+  top: 0;
+  transform: rotate(180deg);
+}
+
+.wavesSvg--bottom {
+  bottom: 0;
+}

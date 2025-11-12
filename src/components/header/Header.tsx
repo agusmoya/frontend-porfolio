@@ -4,10 +4,11 @@ import clsx from 'clsx'
 
 import { useTranslation } from '../../i18n/LanguageContext'
 
-import { CloseIcon, MenuIcon } from '../icons/Icons'
-import { ThemeToggle } from '../themeToggle/ThemeToggle'
 import { Button } from '../button/Button'
-import { LanguageToggle } from '../languageToggle/LanguageToggle'
+import { ButtonLink } from '../link/Link'
+import { ButtonLanguage } from '../buttonLanguage/ButtonLanguage'
+import { ButtonTheme } from '../buttonTheme/ButtonTheme'
+import { CloseIcon, MenuIcon } from '../icons/Icons'
 
 import styles from './Header.module.css'
 
@@ -59,20 +60,25 @@ export const Header = () => {
               <CloseIcon className={styles.closeIcon} />
             </span>
           </Button>
-          <a href="#">
-            <p className={styles.logo}>AM</p>
-          </a>
+          <ButtonLink size="md" variant="text" href="#" className={styles.logoLink}>
+            <span className={styles.logo}>Agustin Moya</span>
+          </ButtonLink>
         </div>
         <nav className={clsx(styles.headerNav, isMenuOpen && styles.headerNavOpen)}>
           {MENU__ITEMS.map((item) => (
-            <a key={item.label} href={item.href} onClick={closeMenu}>
+            <ButtonLink
+              key={item.label}
+              href={item.href}
+              onClick={closeMenu}
+              className={styles.headerNavLink}
+            >
               {item.label}
-            </a>
+            </ButtonLink>
           ))}
         </nav>
         <div className={styles.headerExtras}>
-          <LanguageToggle />
-          <ThemeToggle />
+          <ButtonLanguage />
+          <ButtonTheme />
         </div>
       </div>
     </header>

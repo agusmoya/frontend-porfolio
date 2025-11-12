@@ -1,23 +1,24 @@
 import clsx from 'clsx'
+
 import { useTheme } from '../../hooks/useTheme'
+
 import { Button } from '../button/Button'
 import { MoonIcon, SunIcon } from '../icons/Icons'
 
-import styles from './ThemeToggle.module.css'
+import styles from './ButtonTheme.module.css'
 
 const THEME = {
   LIGHT: 'light',
   DARK: 'dark',
 } as const
 
-export const ThemeToggle = () => {
+export const ButtonTheme = () => {
   const { theme, toggleTheme } = useTheme()
 
   return (
     <Button
       variant="icon"
       id="button-theme"
-      className={styles.buttonTheme}
       onClick={toggleTheme}
       aria-label="Toggle theme"
     >

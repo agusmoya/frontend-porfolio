@@ -1,0 +1,5 @@
+.languageBtn {
+  border: var(--stroke-width-1) dashed var(--color-outline);
+  padding-inline: var(--spacing-sm);
+  border-radius: var(--spacing-sm);
+}

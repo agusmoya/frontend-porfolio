@@ -6,6 +6,7 @@ import styles from './Button.module.css'
 
 export const Button = ({
   variant = VARIANT.filled,
+  size = 'md',
   type = 'button',
   disabled = false,
   loading = false,
@@ -15,6 +16,7 @@ export const Button = ({
 }: ButtonProps) => {
   const classNames = clsx(
     styles.btn,
+    styles[`btn--${size}`],
     styles[`btn--${variant}`],
     (disabled || loading) && styles['btn--disabled'],
     className

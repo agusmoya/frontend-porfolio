@@ -35,11 +35,11 @@
 
   &:hover .footerExternalLink {
     color: var(--color-on-surface);
-    transform: scale(var(--scale-grow-2));
+    transform: scale(var(--scale-grow-3));
   }
 
   &:focus-visible {
-    outline: var(--stroke-width-2) solid var(--color-primary);
+    outline: var(--stroke-width-3) solid var(--color-primary);
     outline-offset: 4px;
     border-radius: var(--radius-sm);
   }
@@ -50,8 +50,13 @@
   transition: transform var(--transition-fast);
 }
 
+.footerContact {
+  color: var(--color-on-surface-variant);
+  font-size: var(--font-size-body-medium);
+}
+
 .footerText {
-  text-align: center;
+  color: var(--color-on-surface-variant);
   margin-top: var(--spacing-xl);
   font-size: var(--font-size-body-small);
 }

@@ -37,7 +37,9 @@ export const KnowledgeToggle = () => {
 
   return (
     <div className={styles.knowledge} role="tablist" aria-label="Knowledge sections">
-      <h3 className={styles.knowledgeTitle}>{t('about.knowledgeTitle')}</h3>
+      <h3 className={`section-subtitle ${styles.knowledgeTitle}`}>
+        {t('about.knowledgeTitle')}
+      </h3>
       <div className={clsx(styles.knowledgeToggle)}>
         <Button
           className={clsx(activeKnowledge === 'experience' && styles.activeTab)}

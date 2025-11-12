@@ -1,5 +1,4 @@
 .buttonThemeIcon {
-  display: inline-block;
   transition:
     transform var(--transition-base),
     opacity var(--transition-base);

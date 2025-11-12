@@ -12,6 +12,7 @@ export type VariantType = (typeof VARIANT)[keyof typeof VARIANT]
 
 export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: VariantType
+  size?: 'sm' | 'md' | 'lg'
   disabled?: boolean
   loading?: boolean
   children: React.ReactNode

@@ -1,8 +1,14 @@
+.contactSection {
+  position: relative;
+}
+
 .contactContainer {
   display: flex;
+  gap: var(--spacing-lg);
   flex-direction: column;
-  min-height: 50vh;
-  padding-block: var(--spacing-2xl);
+  min-height: 60vh;
+  min-height: 60dvh;
+  margin-bottom: var(--spacing-xl);
 }
 
 .title {
@@ -64,4 +70,48 @@
 
 .sendEmailSuccessIcon {
   color: var(--color-success);
+}
+
+.contactDivider {
+  border: var(--stroke-width-1) solid var(--color-outline);
+  margin-block: var(--spacing-xl);
+  width: 40%;
+  margin-inline: auto;
+}
+
+.contactEmailAddress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.contactOptionEmail {
+  text-align: center;
+  font-size: var(--font-size-body-medium);
+  color: var(--color-on-surface-variant);
+}
+
+.contactCopyEmail {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.copyEmailBtn {
+  transition: transform var(--transition-base);
+}
+
+.copyEmailBtn:hover .iconCopyEmailAction {
+  animation: iconBounce 0.5s ease-in-out;
+}
+
+@keyframes iconBounce {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
 }

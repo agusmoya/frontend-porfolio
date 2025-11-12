@@ -30,10 +30,18 @@ export const Skills = () => {
 
   return (
     <div className={styles.skills}>
-      <h3 className={styles.skillsTitle}>{t('about.skills')}</h3>
+      <h3 className={`section-subtitle ${styles.skillsTitle}`}>
+        {t('about.technologies')}
+      </h3>
       <div className={styles.skillsGrid}>
-        {skills.map((skill) => (
-          <Badge key={skill.name} variant="filled" icon={skill.icon}>
+        {skills.map((skill, index) => (
+          <Badge
+            className={styles.skillBadge}
+            style={{ animationDelay: `${index * 0.1}s` }}
+            key={skill.name}
+            variant="outlined-dashed"
+            icon={skill.icon}
+          >
             {skill.name}
           </Badge>
         ))}

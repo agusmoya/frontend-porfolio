@@ -1,13 +1,10 @@
-.skillsTitle {
-  font-size: var(--font-size-title-large);
-  margin-bottom: var(--spacing-lg);
-  color: var(--color-on-surface);
-  text-align: center;
-}
-
 .skillsGrid {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--spacing-sm);
+  gap: var(--spacing-md);
   justify-content: center;
+}
+
+.skillBadge:hover > span {
+  transform: scale(1.5) rotate(-5deg);
 }

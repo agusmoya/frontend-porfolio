@@ -9,6 +9,7 @@ import styles from '../button/Button.module.css'
 export const ButtonLink = ({
   href,
   variant = VARIANT.text,
+  size = 'md',
   disabled = false,
   children,
   className,
@@ -18,6 +19,7 @@ export const ButtonLink = ({
   const classNames = clsx(
     styles.btn,
     styles[`btn--${variant}`],
+    styles[`btn--${size}`],
     disabled && styles['btn--disabled'],
     className
   )

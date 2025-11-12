@@ -27,6 +27,9 @@
   --color-surface-rgba: rgba(22, 18, 23, 0.75);
   --color-on-surface: rgb(234 224 231);
 
+  --color-inverse-surface: rgb(234 224 231);
+  --color-inverse-on-surface: rgb(52 47 52);
+
   --color-surface-variant: rgb(76 68 77);
   --color-on-surface-variant: rgb(207 195 205);
 

@@ -1,8 +1,8 @@
 :root {
+  /* Dinamic typographies */
   --font-family-base: 'Onest', system-ui, sans-serif;
   --font-family-display: 'Lexend', system-ui, sans-serif;
 
-  /* Dinamic typography */
   --font-weight-9: 900;
   --font-weight-8: 800;
   --font-weight-7: 700;
@@ -21,15 +21,24 @@
   --line-height-2: 1.2;
   --line-height-1: 1;
 
-  /* Tamaños de fuente */
+  /* For marketing titles, heroes, impactful phrases of 1-3 words */
+  --font-size-display-xl: 3.75rem; /* 56px */
   --font-size-display-large: 3.25rem; /* 56px */
   --font-size-display-medium: 2.5rem; /* 45px */
+  /* Secondary sections titles, cards headers */
   --font-size-headline-large: 2rem; /* 32px */
   --font-size-headline-medium: 1.75rem; /* 28px */
   --font-size-headline-small: 1.5rem; /* 24px */
+  /* Small component titles, list item names. */
   --font-size-title-large: 1.375rem; /* 22px */
+  --font-size-title-medium: 1rem; /* 16px */
+  --font-size-title-small: 0.875rem; /* 14px */
+  /* Main readable content, paragraphs text. */
   --font-size-body-large: 1rem; /* 16px */
   --font-size-body-medium: 0.875rem; /* 14px */
   --font-size-body-small: 0.75rem; /* 12px */
+  /* Buttons, tabs, chips, badges. */
   --font-size-label-large: 0.875rem; /* 14px */
+  --font-size-label-medium: 0.75rem; /* 12px */
+  --font-size-label-small: 0.6875rem; /* 11px */
 }

@@ -1,20 +1,25 @@
 .header {
   position: sticky;
-  top: 0;
-  left: 0;
-  right: 0;
+  inset: 0;
   box-shadow: var(--elevation-1);
-  background-color: var(--color-surface-rgba);
-  backdrop-filter: blur(10px);
   transition: box-shadow var(--transition-base);
-  z-index: var(--z-tooltip);
+  z-index: var(--z-fixed);
+}
+
+.header::before {
+  position: absolute;
+  content: '';
+  inset: 0;
+  background-color: var(--color-surface-rgba);
+  backdrop-filter: blur(30px);
 }
 
 .headerExtras,
 .logoContainer {
   display: flex;
   align-items: center;
-  gap: var(--spacing-sm);
+  justify-content: left;
+  gap: var(--spacing-xs);
 }
 
 .logo {
@@ -33,13 +38,17 @@
   z-index: var(--z-fixed);
 }
 
-.headerMenuButton {
-  display: flex;
+.logoLink {
+  padding: var(--spacing-xs);
+
+  &::before {
+    background-color: transparent;
+  }
 }
 
 .headerNav {
   background-color: var(--color-surface-rgba);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(15px);
   padding-inline: var(--spacing-lg);
   padding-block: var(--spacing-sm);
 
@@ -114,7 +123,7 @@
   transform: rotate(0deg) scale(var(--scale-base));
 }
 
-@media (min-width: 600px) {
+@media (min-width: 767px) {
   .headerMenuButton {
     display: none;
   }
