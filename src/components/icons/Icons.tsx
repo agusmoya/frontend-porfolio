@@ -27,6 +27,28 @@ export function CopyIcon({ size = 24, fill = 'currentColor', ...props }: IconPro
   )
 }
 
+export function DownloadIcon({ size = 24, fill = 'currentColor', ...props }: IconProps) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill={fill}
+      width={size}
+      height={size}
+      {...props}
+    >
+      <path
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2M7 11l5 5l5-5m-5-7v12"
+      />
+    </svg>
+  )
+}
+
 export function UpIcon({ size = 24, fill = 'currentColor', ...props }: IconProps) {
   return (
     <svg

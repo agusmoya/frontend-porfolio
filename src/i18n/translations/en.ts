@@ -19,7 +19,8 @@ export const en = {
     contact: 'Contact me',
     description:
       'Focused on building clean, accessible, and visually appealing interfaces.',
-    projects: 'See projects',
+    about: 'About me',
+    viewCV: 'View CV',
   },
   about: {
     title: 'About Me',

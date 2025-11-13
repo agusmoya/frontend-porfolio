@@ -16,7 +16,7 @@ import styles from './Contact.module.css'
 
 export const Contact = () => {
   const {
-    // DEV,
+    DEV,
     VITE_EMAILJS_SERVICE_ID,
     VITE_EMAILJS_TEMPLATE_ID,
     VITE_EMAILJS_PUBLIC_KEY,
@@ -62,8 +62,7 @@ export const Contact = () => {
       setFormData({ name: '', email: '', message: '' })
     } catch (error) {
       setStatus('error')
-      // if (DEV)
-      console.error('❌ Error al enviar email:', error)
+      if (DEV) console.error('❌ Error sending email:', error)
     } finally {
       setIsLoading(false)
     }

@@ -9,6 +9,7 @@ import { ButtonUp } from '../../components/buttonUp/ButtonUp'
 import { useTranslation } from '../../i18n/LanguageContext'
 
 import styles from './Hero.module.css'
+import { ExternalLinkIcon } from '../../components/icons/Icons'
 
 export function Hero() {
   const { t } = useTranslation()
@@ -16,12 +17,39 @@ export function Hero() {
   return (
     <section id="hero" className={`${styles.heroSection}`}>
       <div className={styles.blobsContainer}>
-        <AnimatedBlobs blur={10} speed={8} />
+        <AnimatedBlobs
+          blur={5}
+          speed={10}
+          blobs={[
+            {
+              x: '65vw',
+              y: '55vh',
+              width: 'clamp(120px, 16vw, 240px)',
+              height: 'clamp(90px, 12vw, 175px)',
+              direction: 'right',
+            },
+            {
+              x: '20vw',
+              y: '40vh',
+              width: 'clamp(90px, 12vw, 180px)',
+              height: 'clamp(90px, 15vw, 200px)',
+              direction: 'left',
+            },
+            {
+              x: '65vw',
+              y: '30vh',
+              width: 'clamp(95px, 13vw, 190px)',
+              height: 'clamp(45px, 6vw, 90px)',
+              direction: 'left',
+            },
+          ]}
+        />
       </div>
 
       <div className={`container ${styles.heroContainer}`}>
         <h1 className={`section-title ${styles.titleHero}`}>
-          {t('hero.title')} <span className={styles.titleName}>{t('user.name')}</span>
+          <p>{t('hero.title')}</p>
+          <span className={styles.titleName}>{t('user.name')}</span>
         </h1>
         <h2 className={styles.subtitle}>
           <Typewriter
@@ -42,20 +70,23 @@ export function Hero() {
           <ButtonLink
             className={styles.projectsLink}
             size="md"
-            href="#projects"
-            variant={VARIANT.elevated}
-            aria-label={t('hero.projects')}
+            href="#about"
+            variant={VARIANT.tonal}
+            aria-label={t('hero.about')}
           >
-            {t('hero.projects')}
+            {t('hero.about')}
           </ButtonLink>
           <ButtonLink
-            className={styles.contactLink}
-            size="md"
-            href="#contact"
             variant={VARIANT.outlined}
-            aria-label={t('hero.contact')}
+            className={styles.viewCVLink}
+            size="md"
+            href="/cv-agustin-moya.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={t('hero.viewCV')}
           >
-            {t('hero.contact')}
+            {t('hero.viewCV')}
+            <ExternalLinkIcon size={18} />
           </ButtonLink>
         </div>
       </div>

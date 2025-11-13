@@ -80,7 +80,7 @@ h1.titleHero {
   justify-content: center;
   align-content: center;
   gap: var(--spacing-md);
-  margin-top: var(--spacing-xl);
+  margin-top: var(--spacing-lg);
   animation: fadeInUp 0.8s ease-out 0.6s both;
 }
 
@@ -144,6 +144,11 @@ h1.titleHero {
     font-size: var(--font-size-title-large);
   }
 
+  .ctaContainer {
+    margin-top: var(--spacing-xl);
+  }
+
+  .viewCVLink,
   .projectsLink,
   .contactLink {
     height: var(--btn-height-lg);

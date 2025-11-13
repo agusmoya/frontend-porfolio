@@ -18,7 +18,8 @@ export const es = {
     },
     description: 'Enfocado en crear interfaces limpias, accesibles y atractivas.',
     contact: 'Contáctame',
-    projects: 'Ver proyectos',
+    about: 'Acerca de mí',
+    viewCV: 'Ver CV',
   },
   about: {
     title: 'Sobre mí',

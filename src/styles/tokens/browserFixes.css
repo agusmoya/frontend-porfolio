@@ -15,7 +15,7 @@ input:-webkit-autofill:active {
 
 /* Firefox */
 input:-moz-autofill {
-  /* In FF, normal box-shadow is enough. */
+  /* In FF, normal box-shadow is enough */
   box-shadow: inset 0 0 0 1000px var(--color-surface-variant) !important;
   -moz-text-fill-color: var(--color-on-surface) !important;
 }

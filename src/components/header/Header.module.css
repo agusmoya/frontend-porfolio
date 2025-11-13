@@ -11,7 +11,7 @@
   content: '';
   inset: 0;
   background-color: var(--color-surface-rgba);
-  backdrop-filter: blur(30px);
+  backdrop-filter: blur(15px);
 }
 
 .headerExtras,
@@ -23,7 +23,7 @@
 }
 
 .logo {
-  font-weight: var(--font-weight-9);
+  font-weight: var(--font-weight-6);
 }
 
 .headerScrolled {
@@ -48,7 +48,7 @@
 
 .headerNav {
   background-color: var(--color-surface-rgba);
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(10px);
   padding-inline: var(--spacing-lg);
   padding-block: var(--spacing-sm);
 
@@ -68,16 +68,6 @@
   transition:
     opacity var(--transition-base),
     transform var(--transition-base);
-}
-
-.headerNav a {
-  padding-block: var(--spacing-sm);
-  padding-inline: var(--spacing-md);
-  border-radius: var(--radius-sm);
-}
-
-.headerNav a:hover {
-  background-color: var(--color-surface-variant);
 }
 
 .headerNavOpen {
