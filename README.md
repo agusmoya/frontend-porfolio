@@ -1,73 +1,97 @@
-# React + TypeScript + Vite
+# Frontend Portfolio – Agustín Moya
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Portfolio Banner](public/banner.png)
 
-Currently, two official plugins are available:
+## 🚀 Personal Portfolio for Frontend Developers
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A modern, accessible, and visually appealing portfolio built with **React**, **TypeScript**, and **CSS Modules**. Designed to showcase your skills, experience, and projects following Material Design 3 principles.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+- **Responsive Design** – Mobile-first, adapts to all devices
+- **Material Design 3** – Button, spacing, and typography tokens
+- **Animated Backgrounds** – Customizable blobs and SVG shapes
+- **Accessible Components** – Keyboard navigation, ARIA labels, color contrast
+- **Multi-language Support** – English & Spanish (i18n)
+- **Project Carousel** – Scrollable, keyboard-accessible project cards
+- **Contact Form** – EmailJS integration, copy-to-clipboard, animated tooltips
+- **Dark/Light Theme Toggle** – User preference saved
+- **Performance Optimized** – Lighthouse-ready, lazy loading images
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠️ Tech Stack
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- **React 19**
+- **TypeScript 5**
+- **Vite**
+- **CSS Modules**
+- **Material Design 3 tokens**
+- **EmailJS** (contact form)
+- **i18n** (custom context)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+## 📦 Installation
+
+```bash
+# Install dependencies
+pnpm install
+
+# Start development server
+pnpm dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📁 Project Structure
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 ```
+src/
+  components/      # Reusable UI components (Button, Card, Tooltip, etc.)
+  pages/           # Main sections (Hero, About, Projects, Contact)
+  layouts/         # Layout components
+  styles/          # Global styles, tokens, resets
+  i18n/            # Language context and translations
+  assets/          # Images and static files
+public/            # Static files (favicon, CV, etc.)
+```
+
+---
+
+## 🖼️ Customization
+
+- **Edit your info:** `src/i18n/translations/en.ts` and `es.ts`
+- **Add projects:** Update the `projects.items` array in translation files
+- **Change theme colors:** Edit CSS tokens in `src/styles/tokens/colors-*.css`
+- **Replace avatar:** Update `src/assets/avatar.webp`
+- **Upload your CV:** Place PDF in `/public` and update the link in `Hero.tsx`
+
+---
+
+## 🧑‍💻 Accessibility & Best Practices
+
+- All interactive elements have ARIA labels
+- Keyboard navigation for carousels and forms
+- Color contrast meets WCAG AA
+- Responsive spacing and typography via tokens
+
+---
+
+## 📬 Contact
+
+Feel free to reach out via the contact form or copy the email address provided.
+
+---
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+## 🙌 Credits
+
+Created by [Agustín Moya](https://github.com/agusmoya).
