@@ -61,7 +61,7 @@
 
   .profile {
     flex-direction: row;
-    text-wrap-style: balance;
+    text-wrap-style: pretty;
     text-align: left;
   }
 

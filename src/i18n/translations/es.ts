@@ -12,9 +12,9 @@ export const es = {
   hero: {
     title: 'Hola, mi nombre es',
     subtitleTypewriter: {
-      opt1: 'Desarrollador Frontend',
+      opt1: 'Desarrollador frontend',
       opt2: 'Entusiasta de React',
-      opt3: 'Amante de UI/UX',
+      opt3: 'Diseñador UI',
     },
     description: 'Enfocado en crear interfaces limpias, accesibles y atractivas.',
     contact: 'Contáctame',
@@ -24,8 +24,8 @@ export const es = {
   about: {
     title: 'Sobre mí',
     presentation: {
-      p1: 'Soy Frontend Developer con más de tres años de experiencia en desarrollo web, especializado en React, TypeScript, HTML y CSS.',
-      p2: 'Me gusta diseñar y crear interfaces de usuario atractivas, funcionales y accesibles, aplicando los principios de diseño UX/UI.',
+      p1: 'Soy desarrollador frontend con más de cuatro años de experiencia en desarrollo web, especializado en React, TypeScript, HTML y CSS.',
+      p2: 'Me gusta diseñar y crear interfaces de usuario atractivas, funcionales y accesibles.',
     },
     technologies: 'Habilidades',
     knowledgeTitle: 'Conocimientos y Formación',
@@ -33,23 +33,23 @@ export const es = {
     knowledgeEducation: 'Educación',
     experience: [
       {
-        title: 'Desarrollador Fullstack',
+        title: 'Desarrollador Fullstack (orientado a frontend)',
         company: 'Proyecto personal',
-        period: 'Diciembre 2024 - Presente',
+        period: 'Diciembre 2024 al presente',
         description:
-          'Desarrollo (en proceso) de aplicación orientada a la gestión de tareas y eventos de calendario, con notificaciones en tiempo real y colaboración entre usuarios.',
+          'Desarrollo de aplicación orientada a la gestión de tareas y eventos de calendario, con notificaciones en tiempo real y colaboración entre usuarios.',
       },
       {
         title: 'Desarrollador Fullstack (orientado a frontend)',
         company: 'SanCor Salud - Grupo de Medicina Privada',
-        period: 'Diciembre 2022 a diciembre 2024',
+        period: 'Septiembre 2022 a diciembre 2024',
         description:
-          'Cumplí tareas de implementación de soluciones, creación de nuevas funcionalidades y refactorización de código heredado, trabajando de forma colaborativa con usuarios y equipos de desarrollo. Asesoramiento a los miembros del equipo y revisiones diarias de código.',
+          'Cumplí tareas de implementación de soluciones, creación de nuevas funcionalidades y refactorización de código heredado, trabajando de forma colaborativa con usuarios y equipos de desarrollo. Asesoramiento a los miembros del equipo y revisiones periódicas de código.',
       },
       {
         title: 'Desarrollador Fullstack',
         company: 'ADEN Business School',
-        period: 'Noviembre 2021 a noviembre 2022',
+        period: 'Noviembre 2021 a septiembre 2022',
         description:
           'Formé parte de un equipo interdisciplinario donde me dediqué a mejorar y crear implementaciones para optimizar los procesos de negocio.',
       },
@@ -58,7 +58,7 @@ export const es = {
       {
         title: 'React 2025',
         institution: 'Udemy',
-        period: '2025',
+        period: 'Marzo 2022 a 2025 (Actualizaciones progresivas)',
         description: 'Desarrollo web MERN Stack.',
       },
       {
@@ -66,13 +66,25 @@ export const es = {
         institution: 'Universidad Tecnológica Nacional (UTN FRM)',
         period: '2018 - 2021',
         description:
-          'Desarrollador de Software con habilidades blandas, conocimiento lógico, aplicación y resolución a problemas reales que demanda el mercado mediante el uso de herramientas orientadas al backend y frontend',
+          'Desarrollador de Software con habilidades blandas, conocimiento lógico, aplicación y resolución a problemas reales que demanda el mercado mediante el uso de herramientas orientadas al backend y frontend.',
+      },
+      {
+        title: 'Curso programación frontend',
+        institution: 'Potrero Digital',
+        period: 'Septiembre 2021 a diciembre 2021',
+        description: 'Desarrollo de aplicación web.',
+      },
+      {
+        title: 'Capacitación en Programación Java',
+        institution: 'Fundación Educativa Santísima Trinidad',
+        period: 'Octubre 2020 a abril 2021 (500 horas reloj)',
+        description: 'Desarrollo de aplicación web.',
       },
       {
         title: 'Curso de Programación Web Fullstack',
         institution: 'Digital House - Instituto Nacional de Educación Tecnológica (INET)',
-        period: '2020 (6 meses)',
-        description: 'Desarrollo de aplicaciones web orientada a frontend.',
+        period: 'Octubre 2019 a marzo 2020',
+        description: 'Desarrollo de aplicación web orientada a frontend.',
       },
     ],
   },

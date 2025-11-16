@@ -1,6 +1,4 @@
-# Frontend Portfolio – Agustín Moya
-
-![Portfolio Banner](public/banner.png)
+# Frontend Portfolio
 
 ## 🚀 Personal Portfolio for Frontend Developers
 
@@ -19,6 +17,12 @@ A modern, accessible, and visually appealing portfolio built with **React**, **T
 - **Contact Form** – EmailJS integration, copy-to-clipboard, animated tooltips
 - **Dark/Light Theme Toggle** – User preference saved
 - **Performance Optimized** – Lighthouse-ready, lazy loading images
+
+---
+
+## 📸 Vista Previa
+
+![Portfolio Banner](public/banner.png)
 
 ---
 

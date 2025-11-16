@@ -12,9 +12,9 @@ export const en = {
   hero: {
     title: 'Hi, my name is',
     subtitleTypewriter: {
-      opt1: 'Frontend Developer',
-      opt2: 'React Enthusiast',
-      opt3: 'UI/UX Lover',
+      opt1: 'Frontend developer',
+      opt2: 'React enthusiast',
+      opt3: 'UI designer',
     },
     contact: 'Contact me',
     description:
@@ -25,8 +25,8 @@ export const en = {
   about: {
     title: 'About Me',
     presentation: {
-      p1: 'I am a Frontend Developer with over three years of experience in web development, specializing in React, TypeScript, HTML, and CSS.',
-      p2: 'I enjoy designing and creating attractive, functional, and accessible user interfaces, applying UX/UI design principles.',
+      p1: 'I am a Frontend Developer with over four years of experience in web development, specializing in React, TypeScript, HTML, and CSS.',
+      p2: 'I enjoy designing and creating attractive, functional, and accessible user interfaces.',
     },
     technologies: 'Technologies',
     knowledgeTitle: 'Knowledge & Background',
@@ -36,21 +36,21 @@ export const en = {
       {
         title: 'Fullstack Developer (Frontend-oriented)',
         company: 'Personal Project',
-        period: 'December 2024 - Present',
+        period: 'December 2024 to present',
         description:
-          'Development (in progress) of an application focused on task and calendar event management, with real-time notifications and user collaboration.',
+          'Development of an application focused on task and calendar event management, with real-time notifications and user collaboration.',
       },
       {
         title: 'Fullstack Developer (Frontend-oriented)',
         company: 'SanCor Salud - Grupo de Medicina Privada',
-        period: 'December 2022 - December 2024',
+        period: 'September 2022 to december 2024',
         description:
           'I carried out tasks for implementing solutions, creating new features, and refactoring legacy code, working collaboratively with users and development teams. Advising team members and conducting daily code reviews.',
       },
       {
         title: 'Fullstack Developer',
         company: 'ADEN Business School',
-        period: 'November 2021 - November 2022',
+        period: 'November 2021 to september 2022',
         description:
           'I was part of an interdisciplinary team where I focused on improving and creating implementations to optimize business processes.',
       },
@@ -59,21 +59,33 @@ export const en = {
       {
         title: 'React 2025',
         institution: 'Udemy',
-        period: '2025',
+        period: 'March 2022 to 2025 (Progressive updates)',
         description: 'Web development MERN Stack.',
-      },
-      {
-        title: 'Fullstack Web Development Course',
-        institution: 'Digital House - Instituto Nacional de Educación Tecnológica (INET)',
-        period: '2020 (6 months)',
-        description: 'Development of web applications focused on frontend.',
       },
       {
         title: 'University Technician in Programming',
         institution: 'Universidad Tecnológica Nacional (UTN FRM)',
-        period: '2018 - 2021',
+        period: 'March 2018 to december 2021',
         description:
           'Software Developer with soft skills, logical knowledge, application, and resolution of real problems demanded by the market through the use of backend and frontend-oriented tools.',
+      },
+      {
+        title: 'Frontend Programming Course',
+        institution: 'Potrero Digital',
+        period: 'September 2021 to December 2021',
+        description: 'Web application development.',
+      },
+      {
+        title: 'Java Programming Training',
+        institution: 'Fundación Educativa Santísima Trinidad',
+        period: 'October 2020 to April 2021 (500 hours)',
+        description: 'Web application development.',
+      },
+      {
+        title: 'Fullstack Web Development Course',
+        institution: 'Digital House - Instituto Nacional de Educación Tecnológica (INET)',
+        period: 'October 2019 to march 2020',
+        description: 'Development of web application focused on frontend.',
       },
     ],
   },

@@ -5,11 +5,11 @@ import { VARIANT } from '../../components/button/buttonType'
 import { AnimatedBlobs } from '../../components/background-effects/AnimatedBlobs'
 import { FloatingShapes } from '../../components/background-effects/FloatingShapes'
 import { ButtonUp } from '../../components/buttonUp/ButtonUp'
+import { ExternalLinkIcon } from '../../components/icons/Icons'
 
 import { useTranslation } from '../../i18n/LanguageContext'
 
 import styles from './Hero.module.css'
-import { ExternalLinkIcon } from '../../components/icons/Icons'
 
 export function Hero() {
   const { t } = useTranslation()
@@ -18,7 +18,7 @@ export function Hero() {
     <section id="hero" className={`${styles.heroSection}`}>
       <div className={styles.blobsContainer}>
         <AnimatedBlobs
-          blur={5}
+          blur={10}
           speed={10}
           blobs={[
             {
@@ -80,7 +80,7 @@ export function Hero() {
             variant={VARIANT.outlined}
             className={styles.viewCVLink}
             size="md"
-            href="/cv-agustin-moya.pdf"
+            href="/CV-Agustin-Moya.pdf"
             target="_blank"
             rel="noopener noreferrer"
             aria-label={t('hero.viewCV')}
