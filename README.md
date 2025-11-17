@@ -22,7 +22,7 @@ A modern, accessible, and visually appealing portfolio built with **React**, **T
 
 ## 📸 Vista Previa
 
-![Portfolio Banner](public/banner.png)
+![Portfolio Preview](public/preview.gif)
 
 ---
 
@@ -41,7 +41,7 @@ A modern, accessible, and visually appealing portfolio built with **React**, **T
 ## 📦 Installation
 
 ```bash
-# Install dependencies
+# Install **dependencies**
 pnpm install
 
 # Start development server
