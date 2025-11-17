@@ -1,5 +1,11 @@
 # Frontend Portfolio
 
+## 📸 Vista Previa
+
+![Portfolio Preview](public/preview-en.gif)
+
+---
+
 ## 🚀 Personal Portfolio for Frontend Developers
 
 A modern, accessible, and visually appealing portfolio built with **React**, **TypeScript**, and **CSS Modules**. Designed to showcase your skills, experience, and projects following Material Design 3 principles.
@@ -17,12 +23,6 @@ A modern, accessible, and visually appealing portfolio built with **React**, **T
 - **Contact Form** – EmailJS integration, copy-to-clipboard, animated tooltips
 - **Dark/Light Theme Toggle** – User preference saved
 - **Performance Optimized** – Lighthouse-ready, lazy loading images
-
----
-
-## 📸 Vista Previa
-
-![Portfolio Preview](public/preview.gif)
 
 ---
 
