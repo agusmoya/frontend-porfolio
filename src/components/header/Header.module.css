@@ -113,7 +113,7 @@
   transform: rotate(0deg) scale(var(--scale-base));
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .headerMenuButton {
     display: none;
   }

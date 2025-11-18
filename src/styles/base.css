@@ -18,8 +18,8 @@ body::before {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
   height: 100dvh;
+  height: 100vh;
   z-index: var(--z-deep);
   background: radial-gradient(
     ellipse 80% 80% at 50% -20%,
@@ -31,8 +31,8 @@ body::before {
 #root {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
   min-height: 100dvh;
+  min-height: 100vh;
 }
 
 h1,
@@ -84,59 +84,4 @@ input {
 
 *:hover {
   scrollbar-color: var(--scrollbar-thumb-color) transparent;
-}
-
-/* =============== REUSABLE CSS CLASSES =============== */
-
-.section {
-  padding-block: var(--spacing-2xl);
-  min-height: auto;
-  scroll-margin-top: var(--header-height); /* Offset for sticky header */
-}
-
-.section-title {
-  font-size: var(--font-size-display-medium);
-  font-weight: var(--font-weight-7);
-  margin-bottom: var(--spacing-md);
-  background: linear-gradient(
-    135deg,
-    var(--color-primary) 0%,
-    var(--color-tertiary) 100%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-size: 200% 200%;
-  animation: gradientShift 3s ease infinite;
-}
-
-@keyframes gradientShift {
-  0%,
-  100% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-}
-
-.section-subtitle {
-  text-align: center;
-  color: var(--color-on-surface);
-  margin-bottom: var(--spacing-xl);
-}
-
-.container {
-  max-width: var(--container-max-width);
-  padding-inline: var(--spacing-md);
-}
-
-@media (min-width: 767px) {
-  .container {
-    margin-inline: auto;
-  }
-
-  .section {
-    padding-block: 6rem;
-  }
 }

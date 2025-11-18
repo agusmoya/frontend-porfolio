@@ -12,8 +12,11 @@
   --spacing-xs: 0.25rem; /* 4px */
 
   /* ========== Breakpoints ========== */
-  --breakpoint-sm: 400px;
-  --breakpoint-md: 576px;
-  --breakpoint-lg: 767px;
-  --breakpoint-xl: 992px;
+  /* Use as reference in media queries
+   * Mobile-first approach
+   */
+  --breakpoint-sm: 400px; /* Mobile large */
+  --breakpoint-md: 576px; /* Tablet */
+  --breakpoint-lg: 768px; /* Desktop */
+  --breakpoint-xl: 992px; /* Desktop large */
 }

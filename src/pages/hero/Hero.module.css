@@ -1,4 +1,7 @@
 .heroSection {
+  --underline-offset: 5px;
+  --underline-thickness: 3px;
+
   position: relative;
   overflow: hidden;
 }
@@ -43,16 +46,16 @@ h1.titleHero {
   font-size: var(--font-size-display-large);
   position: relative;
   display: inline-block;
-  animation: fadeInScale 0.8s ease-out 0.35s both;
+  animation: fadeInScale 0.8s ease-out 0.4s both;
 }
 
 .titleName::after {
   content: '';
   position: absolute;
   left: 0;
-  bottom: -5px;
+  bottom: calc(var(--underline-offset) * -1);
   width: 50%;
-  height: 3px;
+  height: var(--underline-thickness);
   background: var(--color-outline);
   border-radius: var(--radius-full);
   animation: underlineGrow 0.6s ease-out 0.5s both;
@@ -60,7 +63,7 @@ h1.titleHero {
 
 .subtitle {
   color: var(--color-on-surface);
-  animation: fadeInUp 0.8s ease-out 0.4s both;
+  animation: fadeInUp 0.8s ease-out 0.6s both;
   min-height: clamp(5.125rem, 15vh, 8rem);
   display: flex;
   align-items: center;
@@ -70,7 +73,7 @@ h1.titleHero {
 .description {
   font-weight: var(--font-weight-4);
   font-size: var(--font-size-title-medium);
-  animation: fadeInUp 0.8s ease-out 0.5s both;
+  animation: fadeInUp 0.8s ease-out 0.7s both;
   max-width: 85%;
   text-wrap: pretty;
 }
@@ -81,13 +84,13 @@ h1.titleHero {
   align-content: center;
   gap: var(--spacing-md);
   margin-top: var(--spacing-lg);
-  animation: fadeInUp 0.8s ease-out 0.6s both;
+  animation: fadeInUp 0.8s ease-out 0.8s both;
 }
 
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(var(--hero-translate-distance));
   }
   to {
     opacity: 1;

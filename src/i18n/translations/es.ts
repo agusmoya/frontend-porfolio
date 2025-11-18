@@ -1,4 +1,5 @@
-import projectEvenTaskImg from '../../assets/projects/project-1.webp'
+import projectEvenTaskImg from '../../assets/projects/preview-eventask.webp'
+import projectPFDeportivo from '../../assets/projects/pf-pc-preview.webp'
 
 export const es = {
   user: {
@@ -64,7 +65,7 @@ export const es = {
       {
         title: 'Técnico Universitario en Programación',
         institution: 'Universidad Tecnológica Nacional (UTN FRM)',
-        period: '2018 - 2021',
+        period: 'Marzo 2018 a diciembre 2021',
         description:
           'Desarrollador de Software con habilidades blandas, conocimiento lógico, aplicación y resolución a problemas reales que demanda el mercado mediante el uso de herramientas orientadas al backend y frontend.',
       },
@@ -77,7 +78,7 @@ export const es = {
       {
         title: 'Capacitación en Programación Java',
         institution: 'Fundación Educativa Santísima Trinidad',
-        period: 'Octubre 2020 a abril 2021 (500 horas reloj)',
+        period: 'Octubre 2020 a abril 2021 (500 horas)',
         description: 'Desarrollo de aplicación web.',
       },
       {
@@ -110,7 +111,7 @@ export const es = {
         title: 'Porfolio alto rendimiento deportivo',
         description:
           'Portafolio profesional que muestra el trabajo, la experiencia y el conocimiento del usuario.',
-        image: '',
+        image: projectPFDeportivo,
         tags: ['React', 'TypeScript', 'Node.js'],
         demoUrl: 'https://portfolio-pedro-cazorla.netlify.app/',
         repoFrontendUrl: 'https://github.com/agusmoya/portfolio-pedro-cazorla',

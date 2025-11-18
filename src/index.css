@@ -8,4 +8,6 @@
 @import './styles/tokens/styles.css';
 @import './styles/tokens/browserFixes.css';
 
-@import './styles/global.css';
+@import './styles/utilities.css';
+
+@import './styles/base.css';

@@ -8,8 +8,8 @@
   align-items: center;
   justify-content: space-around;
   gap: var(--spacing-2xl);
+  min-height: 70dvh;
   min-height: 70vh;
-  /* min-height: 70dvh; */
 }
 
 .profile {

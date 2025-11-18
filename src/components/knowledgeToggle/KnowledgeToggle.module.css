@@ -37,8 +37,7 @@
   display: flex;
   flex-direction: column;
   background-color: var(--color-surface);
-  min-height: 37rem;
-  outline: 2px dashed var(--color-outline);
+  outline: var(--stroke-width-2) dashed var(--color-outline);
   padding: var(--spacing-lg);
   border-radius: var(--radius-md);
   gap: var(--spacing-sm);
@@ -55,13 +54,13 @@ ul.knowledgeItemsTimeline {
 }
 
 ul.knowledgeItemsTimeline.animating {
-  animation: fadeInSlide 0.3s ease-out;
+  animation: fadeInSlide var(--transition-slow);
 }
 
 @keyframes fadeInSlide {
   from {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(15px);
   }
   to {
     opacity: 1;
@@ -81,7 +80,7 @@ ul.knowledgeItemsTimeline::before {
     to bottom,
     transparent 0%,
     var(--color-on-surface-variant) 5%,
-    var(--color-on-surface-variant) 80%,
+    var(--color-on-surface-variant) 60%,
     transparent 100%
   );
 }
@@ -109,22 +108,8 @@ li.knowledgeItem {
   z-index: var(--z-tooltip);
 }
 
-li.knowledgeItem:last-child .knowledgeItemMarker::before {
-  content: '';
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 4px;
-  height: 100vh;
-  height: 100dvh;
-  background: linear-gradient(
-    to bottom,
-    transparent 0%,
-    var(--color-surface) 1%,
-    var(--color-surface) 100%
-  );
-  z-index: var(--z-deep);
+li.knowledgeItem:last-child {
+  background-color: var(--color-surface);
 }
 
 .knowledgeItem:hover .knowledgeItemMarker {
@@ -143,6 +128,7 @@ li.knowledgeItem:last-child .knowledgeItemMarker::before {
   top: 0.75rem;
   transform: translateY(-50%);
   color: var(--color-on-surface-variant);
+  font-weight: var(--font-weight-5);
   padding-block: var(--spacing-xs);
   border-radius: var(--radius-xs);
   transition: color var(--transition-fast);

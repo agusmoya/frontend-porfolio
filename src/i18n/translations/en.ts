@@ -1,4 +1,5 @@
-import projectEvenTaskImg from '../../assets/projects/project-1.webp'
+import projectEvenTaskImg from '../../assets/projects/preview-eventask.webp'
+import projectPFDeportivo from '../../assets/projects/pf-pc-preview.webp'
 
 export const en = {
   user: {
@@ -111,7 +112,7 @@ export const en = {
         title: 'High Performance Sports Portfolio',
         description:
           "A professional portfolio that showcases the user's work, experience, and knowledge.",
-        image: '/task-manager.png',
+        image: projectPFDeportivo,
         tags: ['React', 'TypeScript', 'Node.js'],
         demoUrl: 'https://portfolio-pedro-cazorla.netlify.app/',
         repoFrontendUrl: 'https://github.com/agusmoya/portfolio-pedro-cazorla',

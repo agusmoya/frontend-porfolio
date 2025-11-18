@@ -1,0 +1,58 @@
+/* =============== REUSABLE UTILITY CLASSES =============== */
+
+.section {
+  padding-block: var(--spacing-2xl);
+  min-height: auto;
+  scroll-margin-top: var(--header-height); /* Offset for sticky header */
+}
+
+.section-title {
+  font-size: var(--font-size-display-medium);
+  font-weight: var(--font-weight-7);
+  margin-bottom: var(--spacing-md);
+  background: linear-gradient(
+    135deg,
+    var(--color-primary) 0%,
+    var(--color-tertiary) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 200%;
+  animation: gradientShift 3s ease infinite;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--color-on-surface);
+  margin-bottom: var(--spacing-xl);
+}
+
+.container {
+  max-width: var(--container-max-width);
+  padding-inline: var(--spacing-md);
+}
+
+/* ========== ANIMATIONS ========== */
+
+@keyframes gradientShift {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* ========== RESPONSIVE ========== */
+
+@media (min-width: 768px) {
+  .container {
+    margin-inline: auto;
+  }
+
+  .section {
+    padding-block: 6rem;
+  }
+}
