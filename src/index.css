@@ -1,5 +1,6 @@
 /* (Material Design 3) */
 @import './styles/reset.css';
+@import './styles/fonts.css';
 
 @import './styles/tokens/colors-light.css';
 @import './styles/tokens/colors-dark.css';

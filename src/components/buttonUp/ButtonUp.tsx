@@ -26,6 +26,7 @@ export const ButtonUp = () => {
       size="lg"
       variant="fab"
       className={clsx(styles.btnUp, isScrolled && styles.scrolled)}
+      aria-label="Go to hero section"
     >
       <UpIcon />
     </ButtonLink>

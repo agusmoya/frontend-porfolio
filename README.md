@@ -1,5 +1,3 @@
-# Frontend Portfolio
-
 [![Netlify Status](https://api.netlify.com/api/v1/badges/06276d48-5582-477c-a6f9-4238025264b4/deploy-status)](https://app.netlify.com/projects/am-porfolio/deploys)
 
 ## 📸 Preview
@@ -8,7 +6,7 @@
 
 ---
 
-## 🚀 Personal Portfolio
+# 🚀 Personal Portfolio
 
 A modern, accessible, and visually appealing portfolio built with **React**, **TypeScript**, and **CSS Modules**. Designed to showcase your skills, experience, and projects following Material Design 3 principles.
 

@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 
+import clsx from 'clsx'
+
 import { useTranslation } from '../../i18n/LanguageContext'
 
 import { CardProject } from '../../components/card/Card'
@@ -80,14 +82,14 @@ export const Projects = () => {
           })}
         </div>
 
-        <div className={styles.indicators}>
+        <div className={styles.indicators} aria-hidden="true">
           {projects.map((_, index) => (
-            <button
+            <span
               key={index}
-              className={`${styles.indicator} ${index === activeIndex ? styles.indicatorActive : ''}`}
-              onClick={() => scrollToSlide(index)}
-              aria-label={`Go to project ${index + 1}`}
-              aria-current={index === activeIndex}
+              className={clsx(
+                styles.indicator,
+                index === activeIndex && styles.indicatorActive
+              )}
             />
           ))}
         </div>

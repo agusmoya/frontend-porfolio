@@ -36,15 +36,18 @@ export const KnowledgeToggle = () => {
   }
 
   return (
-    <div className={styles.knowledge} role="tablist" aria-label="Knowledge sections">
+    <div className={styles.knowledge}>
       <h3 className={`section-subtitle ${styles.knowledgeTitle}`}>
         {t('about.knowledgeTitle')}
       </h3>
-      <div className={clsx(styles.knowledgeToggle)}>
+      <div className={clsx(styles.knowledgeToggle)} role="tablist" aria-label="Knowledge sections">
         <Button
           className={clsx(activeKnowledge === 'experience' && styles.activeTab)}
           role="tab"
           aria-selected={activeKnowledge === 'experience'}
+          aria-controls="tabpanel-experience"
+          id="tab-experience"
+          tabIndex={activeKnowledge === 'experience' ? 0 : -1}
           onClick={() => handleClickActive('experience')}
           variant="text"
         >
@@ -57,6 +60,9 @@ export const KnowledgeToggle = () => {
           className={clsx(activeKnowledge === 'education' && styles.activeTab)}
           role="tab"
           aria-selected={activeKnowledge === 'education'}
+          aria-controls="tabpanel-education"
+          id="tab-education"
+          tabIndex={activeKnowledge === 'education' ? 0 : -1}
           onClick={() => handleClickActive('education')}
           variant="text"
         >
@@ -66,7 +72,8 @@ export const KnowledgeToggle = () => {
       <div
         className={styles.knowledgeContainer}
         role="tabpanel"
-        aria-labelledby={activeKnowledge}
+        id={`tabpanel-${activeKnowledge}`}
+        aria-labelledby={`tab-${activeKnowledge}`}
       >
         <ul
           className={clsx(styles.knowledgeItemsTimeline, isAnimating && styles.animating)}

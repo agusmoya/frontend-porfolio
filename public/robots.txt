@@ -1,0 +1,6 @@
+# Allow all search engines to index everything
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://agustin-moya-dev.netlify.app/sitemap.xml

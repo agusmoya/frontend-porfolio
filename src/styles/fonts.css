@@ -1,0 +1,27 @@
+/* ========== SELF-HOSTED VARIABLE FONTS ========== */
+
+/* Variable fonts: Single file with all weights (100-900) */
+
+/* Onest - Display font family
+ * Usage: Headings, titles, hero text
+ * Weight range: 100-900 (variable)
+ */
+@font-face {
+  font-display: swap;
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 100 900; /* Variable weight range */
+  src: url('/fonts/Onest.woff2') format('woff2-variations');
+}
+
+/* Lexend - Body font family
+ * Usage: Paragraphs, body text, UI elements
+ * Weight range: 100-900 (variable)
+ */
+@font-face {
+  font-display: swap;
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 100 900; /* Variable weight range */
+  src: url('/fonts/Lexend.woff2') format('woff2-variations');
+}
