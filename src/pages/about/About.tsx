@@ -5,7 +5,6 @@ import { Avatar } from '../../components/avatar/Avatar'
 import { KnowledgeToggle } from '../../components/knowledgeToggle/KnowledgeToggle'
 import { Skills } from '../../components/skills/Skills'
 import { FloatingShapes } from '../../components/background-effects/FloatingShapes'
-import { SvgShapeAbout } from '../../components/svg/SvgShape'
 
 import styles from './About.module.css'
 
@@ -17,7 +16,6 @@ export const About = () => {
       <div className={`container ${styles.aboutContainer}`}>
         <div className={styles.profile}>
           <div className={styles.avatarContainer}>
-            <SvgShapeAbout />
             <Avatar src={avatarImage} alt="Agustín Moya" size="large" />
           </div>
           <div className={styles.description}>
