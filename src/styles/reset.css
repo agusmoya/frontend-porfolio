@@ -15,7 +15,6 @@ html {
 body {
   min-height: 100vh;
   min-height: 100dvh;
-  line-height: var(--line-height-5);
 }
 
 ul,

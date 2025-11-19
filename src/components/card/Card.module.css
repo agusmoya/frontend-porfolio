@@ -67,14 +67,14 @@
   border-radius: var(--radius-lg) var(--radius-lg) 0 0;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.75);
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(10px);
   opacity: 0;
   z-index: var(--z-normal);
   transition: opacity var(--transition-base);
+  border: var(--stroke-width-1) solid var(--color-outline);
 }
 
 .card:hover .cardOverlay {
-  border: var(--stroke-width-1) solid var(--color-outline);
   opacity: 1;
 }
 
@@ -109,8 +109,8 @@
 
 .overlayButton:hover {
   background-color: transparent;
-  border-color: aliceblue;
-  color: aliceblue;
+  border-color: var(--color-on-surface);
+  color: var(--color-on-surface);
   transform: scale(var(--scale-grow-1));
 }
 

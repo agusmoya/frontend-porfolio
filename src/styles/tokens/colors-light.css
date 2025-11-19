@@ -1,45 +1,45 @@
 :root {
-  /* COLOR: #9AA0A8 (CoolSteal) */
+  /* COLOR: #4A4E69 (Dusty Grape) */
 
-  --color-surface-tint: rgb(89 95 102);
+  --color-surface-tint: rgb(89 93 120);
 
-  --color-primary: rgb(89 95 102);
+  --color-primary: rgb(51 55 81);
   --color-on-primary: rgb(255 255 255);
-  --color-primary-container: rgb(154 160 168);
-  --color-on-primary-container: rgb(49 55 62);
+  --color-primary-container: rgb(74 78 105);
+  --color-on-primary-container: rgb(189 192 224);
 
-  --color-secondary: rgb(93 94 98);
+  --color-secondary: rgb(93 93 106);
   --color-on-secondary: rgb(255 255 255);
-  --color-secondary-container: rgb(226 226 230);
-  --color-on-secondary-container: rgb(99 100 104);
+  --color-secondary-container: rgb(226 225 240);
+  --color-on-secondary-container: rgb(99 99 112);
 
-  --color-tertiary: rgb(101 91 100);
+  --color-tertiary: rgb(75 49 68);
   --color-on-tertiary: rgb(255 255 255);
-  --color-tertiary-container: rgb(168 156 166);
-  --color-on-tertiary-container: rgb(60 52 60);
+  --color-tertiary-container: rgb(100 71 91);
+  --color-on-tertiary-container: rgb(221 184 207);
 
   --color-error: rgb(186 26 26);
   --color-on-error: rgb(255 255 255);
   --color-error-container: rgb(255 218 214);
   --color-on-error-container: rgb(147 0 10);
 
-  --color-background: rgb(252 248 249);
-  --color-on-background: rgb(28 27 28);
+  --color-background: rgb(252 248 251);
+  --color-on-background: rgb(28 27 29);
 
-  --color-surface-rgba: rgba(252, 248, 249, 0.75);
-  --color-surface: rgb(252 248 249);
-  --color-on-surface: rgb(28 27 28);
-  --color-surface-variant: rgb(225 226 231);
-  --color-on-surface-variant: rgb(68 71 75);
+  --color-surface-rgba: rgba(252, 248, 251, 0.75);
+  --color-surface: rgb(252 248 251);
+  --color-on-surface: rgb(28 27 29);
+  --color-surface-variant: rgb(227 225 234);
+  --color-on-surface-variant: rgb(70 70 77);
 
-  --color-outline: rgb(117 119 123);
-  --color-outline-variant: rgb(197 198 203);
+  --color-outline: rgb(119 118 126);
+  --color-outline-variant: rgb(199 197 206);
 
   --color-shadow: rgb(0 0 0);
   --color-scrim: rgb(0 0 0);
 
-  --color-inverse-surface: rgb(49 48 49);
-  --color-inverse-on-surface: rgb(243 240 240);
+  --color-inverse-surface: rgb(49 48 50);
+  --color-inverse-on-surface: rgb(243 240 242);
 
   --color-success: rgb(92, 214, 143);
 }

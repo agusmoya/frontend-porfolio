@@ -3,7 +3,7 @@ import projectPFDeportivo from '../../assets/projects/pf-pc-preview.webp'
 
 export const en = {
   user: {
-    name: 'Agustín',
+    name: 'Agustin',
   },
   header: {
     about: 'About',

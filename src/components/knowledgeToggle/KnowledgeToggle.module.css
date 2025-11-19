@@ -47,6 +47,7 @@
 }
 
 ul.knowledgeItemsTimeline {
+  margin-block: var(--spacing-sm);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -57,32 +58,16 @@ ul.knowledgeItemsTimeline.animating {
   animation: fadeInSlide var(--transition-slow);
 }
 
-@keyframes fadeInSlide {
-  from {
-    opacity: 0;
-    transform: translateY(15px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 ul.knowledgeItemsTimeline::before {
-  content: '';
   position: absolute;
+  content: '';
   top: 1rem;
   left: 1rem;
   transform: translateX(-50%);
-  bottom: 0.75rem;
   width: 2px;
-  background: linear-gradient(
-    to bottom,
-    transparent 0%,
-    var(--color-on-surface-variant) 5%,
-    var(--color-on-surface-variant) 60%,
-    transparent 100%
-  );
+  height: 90%;
+  overflow: hidden;
+  background-color: var(--color-on-surface-variant);
 }
 
 li.knowledgeItem {
@@ -120,7 +105,6 @@ li.knowledgeItem:last-child {
 .knowledgeItemContent {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
 }
 
 .knowledgeItemPeriod {
@@ -178,4 +162,15 @@ li.knowledgeItem:last-child {
   box-shadow:
     inset 0 4px 8px black,
     inset 0 -2px 6px black;
+}
+
+@keyframes fadeInSlide {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

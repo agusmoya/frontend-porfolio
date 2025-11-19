@@ -5,6 +5,8 @@ import clsx from 'clsx'
 import { useTranslation } from '../../i18n/LanguageContext'
 
 import { CardProject } from '../../components/card/Card'
+import { Button } from '../../components/button/Button'
+import { LeftIcon, RightIcon } from '../../components/icons/Icons'
 
 import styles from './Projects.module.css'
 
@@ -56,12 +58,14 @@ export const Projects = () => {
       <div className={`container ${styles.projectsContainer}`}>
         <h2 className={`section-title ${styles.title}`}>{t('projects.title')}</h2>
         <div
+          id="projects-carousel"
           ref={carouselRef}
           className={styles.carousel}
           onKeyDown={handleKeyDown}
           tabIndex={0}
           role="region"
-          aria-label="Projects carousel"
+          aria-label={t('projects.title')}
+          aria-live="polite"
         >
           {projects.map((p, index) => {
             return (
@@ -80,6 +84,29 @@ export const Projects = () => {
               </div>
             )
           })}
+        </div>
+
+        <div className={styles.navigationProjects}>
+          <Button
+            variant="tonal"
+            className={styles.prevBtn}
+            onClick={() => scrollToSlide(activeIndex - 1)}
+            aria-label="Previous project"
+            aria-controls="projects-carousel"
+            disabled={activeIndex === 0}
+          >
+            <LeftIcon />
+          </Button>
+          <Button
+            variant="tonal"
+            className={styles.nextBtn}
+            onClick={() => scrollToSlide(activeIndex + 1)}
+            aria-label="Next project"
+            aria-controls="projects-carousel"
+            disabled={activeIndex === projects.length - 1}
+          >
+            <RightIcon />
+          </Button>
         </div>
 
         <div className={styles.indicators} aria-hidden="true">

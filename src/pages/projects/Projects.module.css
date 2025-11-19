@@ -36,6 +36,18 @@
   scroll-snap-stop: always;
 }
 
+.navigationProjects {
+  display: none; /* Hidden on mobile */
+  justify-content: center;
+  gap: var(--spacing-md);
+
+  & > button {
+    padding: var(--spacing-sm);
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
 .indicators {
   display: flex;
   gap: var(--spacing-sm);
@@ -60,5 +72,9 @@
 @media (min-width: 576px) {
   .carousel {
     padding: var(--spacing-md);
+  }
+
+  .navigationProjects {
+    display: flex;
   }
 }
