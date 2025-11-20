@@ -22,13 +22,6 @@ const defaultBlobs: BlobConfig[] = [
     height: 'clamp(90px, 12vw, 175px)',
     direction: 'right',
   },
-  // {
-  //   x: '30vw',
-  //   y: '55vh',
-  //   width: 'clamp(80px, 11vw, 160px)',
-  //   height: 'clamp(95px, 13vw, 190px)',
-  //   direction: 'right',
-  // },
   {
     x: '20vw',
     y: '40vh',

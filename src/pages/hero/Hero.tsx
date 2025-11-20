@@ -18,12 +18,12 @@ export function Hero() {
     <section id="hero" className={`${styles.heroSection}`}>
       <div className={styles.blobsContainer}>
         <AnimatedBlobs
-          blur={10}
+          blur={8}
           speed={10}
           blobs={[
             {
-              x: '65vw',
-              y: '55vh',
+              x: '60vw',
+              y: '58vh',
               width: 'clamp(120px, 16vw, 240px)',
               height: 'clamp(90px, 12vw, 175px)',
               direction: 'right',
@@ -31,7 +31,7 @@ export function Hero() {
             {
               x: '20vw',
               y: '40vh',
-              width: 'clamp(90px, 12vw, 180px)',
+              width: 'clamp(90px, 15vw, 200px)',
               height: 'clamp(90px, 15vw, 200px)',
               direction: 'left',
             },
@@ -118,8 +118,8 @@ export function Hero() {
             yOffset: 50,
           },
         ]}
-        blur={10}
-        opacity={0.2}
+        blur={15}
+        opacity={0.3}
       />
 
       <ButtonUp />

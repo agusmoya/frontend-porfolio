@@ -88,17 +88,15 @@
 .overlayButton {
   font-size: var(--font-size-label-large);
   font-weight: var(--font-weight-6);
-
   display: flex;
   align-items: center;
   justify-content: center;
   gap: var(--spacing-sm);
   padding: var(--spacing-sm) var(--spacing-md);
-  border: var(--stroke-width-2) solid var(--color-primary);
+  border: var(--stroke-width-2) solid aliceblue;
   border-radius: var(--radius-md);
-
-  color: var(--color-on-primary);
-  background-color: var(--color-primary);
+  color: aliceblue;
+  background-color: var(--color-primary-container);
   transition:
     transform var(--transition-fast),
     background-color var(--transition-fast),

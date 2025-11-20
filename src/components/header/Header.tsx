@@ -8,7 +8,7 @@ import { Button } from '../button/Button'
 import { ButtonLink } from '../link/Link'
 import { ButtonLanguage } from '../buttonLanguage/ButtonLanguage'
 import { ButtonTheme } from '../buttonTheme/ButtonTheme'
-import { CloseIcon, MenuIcon } from '../icons/Icons'
+import { AMLogo, CloseIcon, MenuIcon } from '../icons/Icons'
 
 import styles from './Header.module.css'
 
@@ -61,7 +61,7 @@ export const Header = () => {
             </span>
           </Button>
           <ButtonLink size="md" variant="text" href="#" className={styles.logoLink}>
-            <span className={styles.logo}>Agustin Moya</span>
+            <AMLogo width={150} height={52} />
           </ButtonLink>
         </div>
         <nav className={clsx(styles.headerNav, isMenuOpen && styles.headerNavOpen)}>

@@ -90,7 +90,7 @@ export const Contact = () => {
           },
         ]}
         blur={20}
-        opacity={0.5}
+        opacity={0.3}
       />
       <div className={`container ${styles.contactContainer}`}>
         <h2 className={`section-title ${styles.title}`}>{t('contact.title')}</h2>

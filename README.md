@@ -2,7 +2,7 @@
 
 ## 📸 Preview
 
-![Portfolio Preview](public/preview-en.gif)
+![Portfolio Preview](public/mockup.gif)
 
 ---
 
