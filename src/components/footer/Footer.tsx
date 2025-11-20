@@ -9,13 +9,13 @@ export const Footer = () => {
 
   const LINKS = [
     {
-      href: 'https://www.linkedin.com/in/agustin-moya-natt',
+      href: 'https://www.linkedin.com/in/agustin-moya-dev',
       icon: <LinkedInIcon />,
       label: 'LinkedIn',
       ariaLabel: 'Connect on LinkedIn',
     },
     {
-      href: 'mailto:develop.services.natt@gmail.com',
+      href: 'mailto:agustin.moya.dev@gmail.com',
       icon: <GmailIcon />,
       label: 'Gmail',
       ariaLabel: 'Send an email',

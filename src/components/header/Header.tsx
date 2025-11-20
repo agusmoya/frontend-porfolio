@@ -60,7 +60,13 @@ export const Header = () => {
               <CloseIcon className={styles.closeIcon} />
             </span>
           </Button>
-          <ButtonLink size="md" variant="text" href="#" className={styles.logoLink}>
+          <ButtonLink
+            size="md"
+            variant="text"
+            href="#"
+            className={styles.logoLink}
+            aria-label="Go to home"
+          >
             <AMLogo width={150} height={52} />
           </ButtonLink>
         </div>
