@@ -1,11 +1,11 @@
-/* — HIDING AUTOFILL BACKGROUND (más limpio) — */
+/* — HIDING AUTOFILL BACKGROUND — */
 
 /* Chrome, Edge, Safari (WebKit/Chromium) */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-  /* cover the yellow with an inset-shadow */
+  /* cover the filling with an inset-shadow */
   box-shadow: inset 0 0 0 1000px var(--color-surface-variant) !important;
   /* keeps text color */
   -webkit-text-fill-color: var(--color-on-surface) !important;

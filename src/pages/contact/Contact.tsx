@@ -141,7 +141,7 @@ export const Contact = () => {
               </p>
             )}
 
-            <Button type="submit" variant="outlined" loading={isLoading}>
+            <Button type="submit" variant="outlined" disabled={isLoading}>
               {isLoading ? t('contact.sending') : t('contact.send')}
             </Button>
           </form>

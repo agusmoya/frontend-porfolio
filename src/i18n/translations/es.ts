@@ -112,7 +112,7 @@ export const es = {
         description:
           'Portafolio profesional que muestra el trabajo, la experiencia y el conocimiento del usuario.',
         image: projectPFDeportivo,
-        tags: ['React', 'TypeScript', 'Node.js'],
+        tags: ['HTML', 'CSS', 'JavaScript'],
         demoUrl: 'https://portfolio-pedro-cazorla.netlify.app/',
         repoFrontendUrl: 'https://github.com/agusmoya/portfolio-pedro-cazorla',
       },
