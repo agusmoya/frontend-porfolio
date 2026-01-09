@@ -18,9 +18,9 @@ export const ButtonLink = ({
 }: ButtonLinkProps) => {
   const classNames = clsx(
     styles.btn,
-    styles[`btn--${variant}`],
-    styles[`btn--${size}`],
-    disabled && styles['btn--disabled'],
+    styles[size],
+    styles[variant],
+    disabled && styles['disabled'],
     className
   )
 
@@ -42,7 +42,7 @@ export const ButtonLink = ({
       {...externalProps}
       {...props}
     >
-      <span className={styles.btn__content}>{children}</span>
+      <span className={styles.content}>{children}</span>
     </a>
   )
 }

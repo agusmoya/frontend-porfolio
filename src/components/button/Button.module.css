@@ -74,6 +74,7 @@
   opacity: var(--state-layer-pressed-opacity);
 }
 
+.disabled,
 .btn:disabled {
   opacity: var(--state-layer-disabled-opacity);
   cursor: not-allowed;

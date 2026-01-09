@@ -103,9 +103,9 @@ export const en = {
           'Full-stack application for managing tasks, calendar events, real-time notifications, and user collaboration.',
         image: projectEvenTaskImg,
         tags: ['React', 'TypeScript', 'Node.js'],
-        demoUrl: 'https://schedule-task-manager.vercel.app/',
-        repoBackendUrl: 'https://github.com/agusmoya/backend-mern-todo-app',
-        repoFrontendUrl: 'https://github.com/agusmoya/task-manager',
+        demoUrl: 'https://taskevent.netlify.app/',
+        repoBackendUrl: 'https://github.com/AgustinMoyaDev/eventask-api',
+        repoFrontendUrl: 'https://github.com/AgustinMoyaDev/eventask-web',
       },
       {
         id: 'project-2',
