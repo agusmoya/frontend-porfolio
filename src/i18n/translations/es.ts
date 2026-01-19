@@ -1,5 +1,5 @@
-import projectEvenTaskImg from '../../assets/projects/preview-eventask.webp'
-import projectPFDeportivo from '../../assets/projects/pf-pc-preview.webp'
+import projectEvenTaskImg from '../../assets/projects/eventask-preview.webp'
+import projectPFDeportivo from '../../assets/projects/dt-cazorla-mockup.webp'
 
 export const es = {
   user: {
@@ -102,7 +102,7 @@ export const es = {
           'Aplicación full-stack para la gestión de tareas, eventos de calendario, notificaciones en tiempo real y colaboración de usuarios.',
         image: projectEvenTaskImg,
         tags: ['React', 'TypeScript', 'Node.js'],
-        demoUrl: 'https://taskevent.netlify.app/',
+        demoUrl: 'https://demo-eventask.netlify.app/home',
         repoBackendUrl: 'https://github.com/AgustinMoyaDev/eventask-api',
         repoFrontendUrl: 'https://github.com/AgustinMoyaDev/eventask-web',
       },

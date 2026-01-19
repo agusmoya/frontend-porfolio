@@ -30,6 +30,9 @@
   --color-surface-variant: rgb(70 70 77);
   --color-on-surface-variant: rgb(199 197 206);
 
+  --color-surface-container-low: rgb(28 27 29);
+  --color-surface-container-high: rgb(42 42 44);
+
   --color-outline: rgb(145 144 152);
   --color-outline-variant: rgb(70 70 77);
 

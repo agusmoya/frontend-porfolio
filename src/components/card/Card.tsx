@@ -1,9 +1,10 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 import { useTranslation } from '../../i18n/LanguageContext'
 
 import { Badge } from '../badge/Badge'
-import { ExternalLinkIcon, GitHubIcon } from '../icons/Icons'
+import { ExternalLinkIcon, GitHubIcon, MoreOptionsIcon } from '../icons/Icons'
+import { Button } from '../button/Button'
 
 import styles from './Card.module.css'
 
@@ -30,6 +31,40 @@ export const CardProject = ({
 }: CardProjectProps) => {
   const { t } = useTranslation()
   const [imageError, setImageError] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const menuRef = useRef<HTMLDivElement>(null)
+
+  const toggleMenu = () => {
+    setIsMenuOpen((prev) => !prev)
+  }
+
+  // Close menu when clicking outside
+  useEffect(() => {
+    console.log(isMenuOpen)
+
+    const handleClickOutside = (event: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        console.log('Entro')
+        setIsMenuOpen(false)
+      }
+    }
+
+    const handleEscape = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        setIsMenuOpen(false)
+      }
+    }
+
+    if (isMenuOpen) {
+      document.addEventListener('mousedown', handleClickOutside)
+      document.addEventListener('keydown', handleEscape)
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+      document.removeEventListener('keydown', handleEscape)
+    }
+  }, [isMenuOpen])
 
   const handleImageError = () => {
     setImageError(true)
@@ -91,6 +126,61 @@ export const CardProject = ({
       </div>
 
       <div className={styles.cardContent}>
+        <Button
+          variant="icon"
+          className={styles.mobileMenuBtn}
+          onClick={toggleMenu}
+          aria-label="Project options menu"
+          aria-expanded={isMenuOpen}
+          aria-haspopup="true"
+        >
+          <MoreOptionsIcon />
+        </Button>
+
+        {isMenuOpen && (
+          <div ref={menuRef} className={styles.dropdownMenu} role="menu">
+            {demoUrl && (
+              <a
+                className={styles.menuItem}
+                href={demoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                role="menuitem"
+                onClick={toggleMenu}
+              >
+                <ExternalLinkIcon />
+                <span>{t('projects.viewDemo')}</span>
+              </a>
+            )}
+            {repoBackendUrl && (
+              <a
+                className={styles.menuItem}
+                href={repoBackendUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                role="menuitem"
+                onClick={toggleMenu}
+              >
+                <GitHubIcon />
+                <span>{t('projects.viewCodeBackend')}</span>
+              </a>
+            )}
+            {repoFrontendUrl && (
+              <a
+                className={styles.menuItem}
+                href={repoFrontendUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                role="menuitem"
+                onClick={toggleMenu}
+              >
+                <GitHubIcon />
+                <span>{t('projects.viewCodeFrontend')}</span>
+              </a>
+            )}
+          </div>
+        )}
+
         <h3 className={styles.cardTitle}>{title}</h3>
         <p className={styles.cardDescription}>{description}</p>
         <div className={styles.cardTags}>

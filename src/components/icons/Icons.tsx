@@ -140,6 +140,33 @@ export function AMIcon({
   )
 }
 
+export function MoreOptionsIcon({
+  width = 16,
+  height = 18,
+  fill = 'currentColor',
+  ...props
+}: IconProps) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill={fill}
+      width={width}
+      height={height}
+      {...props}
+    >
+      <path
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        d="M11 12a1 1 0 1 0 2 0a1 1 0 1 0-2 0m0 7a1 1 0 1 0 2 0a1 1 0 1 0-2 0m0-14a1 1 0 1 0 2 0a1 1 0 1 0-2 0"
+      />
+    </svg>
+  )
+}
+
 export function LeftIcon({ size = 24, fill = 'currentColor', ...props }: IconProps) {
   return (
     <svg

@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: var(--color-surface-container-low);
   border-radius: var(--radius-lg);
   box-shadow: var(--elevation-1);
   min-height: 100%;
@@ -42,10 +43,6 @@
   transition: transform var(--transition-base);
 }
 
-.card:hover .cardImage img {
-  transform: scale(var(--scale-grow-3));
-}
-
 .imagePlaceholder {
   height: 100%;
   display: flex;
@@ -74,8 +71,18 @@
   border: var(--stroke-width-1) solid var(--color-outline);
 }
 
-.card:hover .cardOverlay {
-  opacity: 1;
+/* Show overlay only on devices with hover capability (desktop) */
+@media (hover: hover) {
+  .card:hover .cardOverlay {
+    opacity: 1;
+  }
+}
+
+/* Zoom effect on image only for desktop */
+@media (hover: hover) {
+  .card:hover .cardImage img {
+    transform: scale(var(--scale-grow-3));
+  }
 }
 
 .overlayButtons {
@@ -122,12 +129,86 @@
 }
 
 .cardContent {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   flex-grow: 1;
   gap: var(--spacing-sm);
   padding: var(--spacing-lg);
+}
+
+.mobileMenuBtn {
+  position: absolute;
+  top: var(--spacing-md);
+  right: var(--spacing-md);
+  display: flex;
+}
+
+/* Hide mobile menu button on devices with hover capability (desktop) */
+@media (hover: hover) {
+  .mobileMenuBtn {
+    display: none;
+  }
+}
+
+/* Dropdown menu for mobile/tablet */
+.dropdownMenu {
+  position: absolute;
+  top: 1.5rem;
+  right: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-sm);
+  background-color: var(--color-surface-container-high);
+  border-radius: var(--radius-md);
+  box-shadow: var(--elevation-3);
+  z-index: var(--z-tooltip);
+  animation: slideDownFade 0.2s ease-out;
+}
+
+@keyframes slideDownFade {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hide dropdown menu on devices with hover capability (desktop) */
+@media (hover: hover) {
+  .dropdownMenu {
+    display: none;
+  }
+}
+
+.menuItem {
+  font-size: var(--font-size-label-large);
+  font-weight: var(--font-weight-5);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-sm);
+  color: var(--color-on-surface);
+  background-color: transparent;
+  transition:
+    background-color var(--transition-fast),
+    transform var(--transition-fast);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.menuItem:hover {
+  background-color: var(--color-surface-container-highest);
+}
+
+.menuItem:active {
+  transform: scale(2.98);
 }
 
 .cardTitle {
