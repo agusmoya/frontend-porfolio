@@ -68,18 +68,15 @@ export function Hero() {
         <p className={styles.description}>{t('hero.description')}</p>
         <div className={styles.ctaContainer}>
           <ButtonLink
-            className={styles.projectsLink}
-            size="md"
+            variant={VARIANT.outlined}
+            size="lg"
             href="#about"
-            variant={VARIANT.tonal}
             aria-label={t('hero.about')}
           >
             {t('hero.about')}
           </ButtonLink>
           <ButtonLink
-            variant={VARIANT.outlined}
-            className={styles.viewCVLink}
-            size="md"
+            size="lg"
             href="/CV-Agustin-Moya.pdf"
             target="_blank"
             rel="noopener noreferrer"

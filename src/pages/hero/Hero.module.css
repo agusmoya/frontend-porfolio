@@ -150,12 +150,4 @@ h1.titleHero {
   .ctaContainer {
     margin-top: var(--spacing-xl);
   }
-
-  .viewCVLink,
-  .projectsLink,
-  .contactLink {
-    height: var(--btn-height-lg);
-    padding-inline: var(--btn-padding-lg);
-    font-size: var(--btn-font-size-lg);
-  }
 }

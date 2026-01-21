@@ -20,7 +20,7 @@ export const ButtonLink = ({
     styles.btn,
     styles[size],
     styles[variant],
-    disabled && styles['disabled'],
+    disabled && styles.disabled,
     className
   )
 

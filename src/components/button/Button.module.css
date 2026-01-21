@@ -102,8 +102,8 @@
 }
 
 .tonal {
-  background-color: var(--color-primary-container);
-  color: var(--color-on-primary-container);
+  background-color: var(--color-tertiary);
+  color: var(--color-on-tertiary);
 }
 
 .outlined {

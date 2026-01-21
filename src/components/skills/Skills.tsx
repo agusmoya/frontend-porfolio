@@ -3,6 +3,7 @@ import { Badge } from '../badge/Badge'
 import {
   AccessibilityIcon,
   CssIcon,
+  FigmaIcon,
   GitIcon,
   Html5Icon,
   MaterialDesignIcon,
@@ -26,6 +27,7 @@ export const Skills = () => {
     { name: 'Git', icon: <GitIcon /> },
     { name: 'Vite', icon: <ViteIcon /> },
     { name: 'Storybook', icon: <StorybookIcon /> },
+    { name: 'Figma', icon: <FigmaIcon /> },
   ]
 
   return (
