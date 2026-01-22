@@ -40,11 +40,8 @@ export const CardProject = ({
 
   // Close menu when clicking outside
   useEffect(() => {
-    console.log(isMenuOpen)
-
     const handleClickOutside = (event: MouseEvent) => {
       if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
-        console.log('Entro')
         setIsMenuOpen(false)
       }
     }

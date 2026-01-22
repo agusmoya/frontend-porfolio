@@ -34,6 +34,9 @@ h1.titleHero {
   max-width: 70%;
   animation: fadeInUp 0.8s ease-out 0.3s both;
   margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .titleName {
@@ -41,7 +44,7 @@ h1.titleHero {
   background-clip: initial;
   -webkit-background-clip: initial;
   -webkit-text-fill-color: initial;
-  color: var(--color-on-surface);
+  color: var(--color-tertiary);
   font-weight: var(--font-weight-7);
   font-size: var(--font-size-display-large);
   position: relative;
@@ -54,7 +57,6 @@ h1.titleHero {
   position: absolute;
   left: 0;
   bottom: calc(var(--underline-offset) * -1);
-  width: 50%;
   height: var(--underline-thickness);
   background: var(--color-outline);
   border-radius: var(--radius-full);

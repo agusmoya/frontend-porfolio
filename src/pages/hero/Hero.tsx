@@ -48,7 +48,7 @@ export function Hero() {
 
       <div className={`container ${styles.heroContainer}`}>
         <h1 className={`section-title ${styles.titleHero}`}>
-          <p>{t('hero.title')}</p>
+          <span>{t('hero.title')}</span>
           <span className={styles.titleName}>{t('user.name')}</span>
         </h1>
         <h2 className={styles.subtitle}>
@@ -76,6 +76,7 @@ export function Hero() {
             {t('hero.about')}
           </ButtonLink>
           <ButtonLink
+            variant={VARIANT.tonal}
             size="lg"
             href="/CV-Agustin-Moya.pdf"
             target="_blank"

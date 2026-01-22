@@ -13,21 +13,21 @@ export const en = {
   hero: {
     title: 'Hi, my name is',
     subtitleTypewriter: {
-      opt1: 'Frontend developer',
-      opt2: 'React enthusiast',
-      opt3: 'UI designer',
+      opt1: 'Frontend Developer',
+      opt2: 'React Specialist',
+      opt3: 'UX/UI Oriented Developer',
     },
     contact: 'Contact me',
     description:
-      'Focused on building clean, accessible, and visually appealing interfaces.',
+      'Specialized in building clean, accessible, and high-performance interfaces using the MERN stack.',
     about: 'About me',
     viewCV: 'View CV',
   },
   about: {
     title: 'About Me',
     presentation: {
-      p1: 'I am a Frontend Developer with over four years of experience in web development, specializing in React, TypeScript, HTML, and CSS.',
-      p2: 'I enjoy designing and creating attractive, functional, and accessible user interfaces.',
+      p1: 'I am a Frontend Developer with over four years of experience in web development, specializing in React, TypeScript, and modern UI architectures.',
+      p2: 'I bridge the gap between design and engineering, creating functional and accessible user interfaces that follow best practices.',
     },
     technologies: 'Technologies',
     knowledgeTitle: 'Knowledge & Background',
@@ -35,85 +35,97 @@ export const en = {
     knowledgeEducation: 'Education',
     experience: [
       {
-        title: 'Fullstack Developer (Frontend-oriented)',
-        company: 'Personal Project',
-        period: 'December 2024 to present',
+        title: 'Frontend Developer',
+        company: 'Independent Development',
+        period: 'December 2024 to Present',
         description:
-          'Development of an application focused on task and calendar event management, with real-time notifications and user collaboration.',
+          "Developed 'EvenTask', a collaborative task, event and calendar manager featuring real-time notifications and instant updates for seamless user interaction.",
       },
       {
-        title: 'Fullstack Developer (Frontend-oriented)',
+        title: 'Frontend Developer (Fullstack Duties)',
         company: 'SanCor Salud - Grupo de Medicina Privada',
-        period: 'September 2022 to december 2024',
+        period: 'September 2022 to December 2024',
         description:
-          'I carried out tasks for implementing solutions, creating new features, and refactoring legacy code, working collaboratively with users and development teams. Advising team members and conducting daily code reviews.',
+          'Developed scalable solutions and refactored legacy code in a collaborative agile environment. Actively promoted code quality through daily code reviews and knowledge sharing with peers.',
       },
       {
         title: 'Fullstack Developer',
         company: 'ADEN Business School',
-        period: 'November 2021 to september 2022',
+        period: 'November 2021 to September 2022',
         description:
-          'I was part of an interdisciplinary team where I focused on improving and creating implementations to optimize business processes.',
+          'Collaborated with cross-functional teams (Accounting, Certification) to analyze requirements and develop custom solutions that optimized internal business processes.',
       },
     ],
     education: [
       {
-        title: 'React 2025',
+        title: 'React & MERN',
         institution: 'Udemy',
-        period: 'March 2022 to 2025 (Progressive updates)',
-        description: 'Web development MERN Stack.',
+        period: '2022 - Present',
+        description:
+          'Continuous learning resource used for reference, deepening knowledge, and keeping up with framework updates.',
       },
       {
         title: 'University Technician in Programming',
         institution: 'Universidad Tecnológica Nacional (UTN FRM)',
-        period: 'March 2018 to december 2021',
+        period: '2018 - 2021',
         description:
-          'Software Developer with soft skills, logical knowledge, application, and resolution of real problems demanded by the market through the use of backend and frontend-oriented tools.',
+          'Strong foundation in algorithms, data structures, and software engineering principles. Comprehensive training in logic resolution and application architecture.',
       },
       {
-        title: 'Frontend Programming Course',
+        title: 'Frontend Specialization',
         institution: 'Potrero Digital',
-        period: 'September 2021 to December 2021',
-        description: 'Web application development.',
+        period: 'September 2021 - December 2021',
+        description:
+          'Intensive training focused on Web Layout, Responsive Design, and JavaScript logic.',
       },
       {
-        title: 'Java Programming Training',
+        title: 'Java Programming',
         institution: 'Fundación Educativa Santísima Trinidad',
-        period: 'October 2020 to April 2021 (500 hours)',
-        description: 'Web application development.',
+        period: '2020 - 2021',
+        description: 'Object-Oriented Programming (OOP) and backend fundamentals.',
       },
       {
-        title: 'Fullstack Web Development Course',
-        institution: 'Digital House - Instituto Nacional de Educación Tecnológica (INET)',
-        period: 'October 2019 to march 2020',
-        description: 'Development of web application focused on frontend.',
+        title: 'Fullstack Web Development',
+        institution: 'Digital House (INET)',
+        period: '2019 - 2020',
+        description:
+          'Web development bootcamp with a strong focus on UI Layout, Interface Design, and Adaptability.',
       },
     ],
   },
   projects: {
     title: 'My Projects',
-    viewDemo: 'Go to website',
-    viewCodeFrontend: 'View Frontend Repository',
-    viewCodeBackend: 'View Backend Repository',
+    viewDemo: 'Live Demo',
+    viewCodeFrontend: 'Frontend Repository',
+    viewCodeBackend: 'Backend Repository',
     items: [
       {
         id: 'project-1',
         title: 'EvenTask App',
         description:
-          'Full-stack application for managing tasks, calendar events, real-time notifications, and user collaboration.',
+          'A productivity app featuring JWT authentication, real-time notifications via WebSockets, and a custom UI system built from scratch using React and CSS Modules.',
         image: projectEvenTaskImg,
-        tags: ['React', 'TypeScript', 'Node.js'],
+        tags: [
+          'HTML',
+          'CSS',
+          'React',
+          'TypeScript',
+          'Node.js',
+          'Express',
+          'Socket.io',
+          'MongoDB',
+        ],
         demoUrl: 'https://demo-eventask.netlify.app/home',
         repoBackendUrl: 'https://github.com/AgustinMoyaDev/eventask-api',
         repoFrontendUrl: 'https://github.com/AgustinMoyaDev/eventask-web',
       },
       {
         id: 'project-2',
-        title: 'High Performance Sports Portfolio',
+        title: 'High Performance Portfolio',
         description:
-          "A professional portfolio that showcases the user's work, experience, and knowledge.",
+          'A fully responsive portfolio built with vanilla technologies to maximize performance metrics (Core Web Vitals) and semantic HTML structure.',
         image: projectPFDeportivo,
-        tags: ['React', 'TypeScript', 'Node.js'],
+        tags: ['HTML', 'CSS', 'JavaScript'],
         demoUrl: 'https://portfolio-pedro-cazorla.netlify.app/',
         repoFrontendUrl: 'https://github.com/agusmoya/portfolio-pedro-cazorla',
       },
@@ -121,7 +133,7 @@ export const en = {
   },
   contact: {
     title: 'Get in Touch',
-    description: 'If you have any questions or proposals, feel free to contact me.',
+    description: "Looking for a Frontend Developer aimed at quality and UX? Let's talk.",
     name: 'Your name',
     email: 'Your email',
     message: 'Message',
@@ -130,12 +142,11 @@ export const en = {
     success: 'Message sent successfully. I will get back to you shortly.',
     error: 'Failed to send message. Please try again.',
     emailAddress: 'agustin.moya.dev@gmail.com',
-    contactOptionEmail:
-      'Or you can copy my email and send your message from wherever you prefer:',
+    contactOptionEmail: 'Alternatively, you can copy my email address:',
   },
   footer: {
-    year: '2025',
-    contact: 'You can also contact me through:',
-    creator: 'Created by Agustin Moya.',
+    year: '2026',
+    contact: 'Connect with me:',
+    creator: 'Designed & Developed by Agustin Moya.',
   },
 }
