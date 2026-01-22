@@ -27,7 +27,7 @@ export const en = {
     title: 'About Me',
     presentation: {
       p1: 'I am a Frontend Developer with over four years of experience in web development, specializing in React, TypeScript, and modern UI architectures.',
-      p2: 'I bridge the gap between design and engineering, creating functional and accessible user interfaces that follow best practices.',
+      p2: 'I translate design into code, creating functional and accessible user interfaces that follow best practices.',
     },
     technologies: 'Technologies',
     knowledgeTitle: 'Knowledge & Background',

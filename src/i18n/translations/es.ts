@@ -26,8 +26,8 @@ export const es = {
   about: {
     title: 'Sobre Mí',
     presentation: {
-      p1: 'Soy un Desarrollador Frontend con más de cuatro años de experiencia en desarrollo web, especializado en React, TypeScript y arquitecturas de UI modernas.',
-      p2: 'Conecto el diseño con la ingeniería, creando interfaces de usuario funcionales y accesibles que siguen las mejores prácticas.',
+      p1: 'Soy Desarrollador Frontend con más de cuatro años de experiencia en desarrollo web, especializado en React, TypeScript y arquitecturas de UI modernas.',
+      p2: 'Traduzco el diseño a código, creando interfaces de usuario funcionales y accesibles que siguen las mejores prácticas.',
     },
     technologies: 'Tecnologías',
     knowledgeTitle: 'Conocimientos y Antecedentes',
