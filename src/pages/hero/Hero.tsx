@@ -78,7 +78,7 @@ export function Hero() {
           <ButtonLink
             variant={VARIANT.tonal}
             size="lg"
-            href="/CV-Agustin-Moya.pdf"
+            href={t('hero.cvUrl')}
             target="_blank"
             rel="noopener noreferrer"
             aria-label={t('hero.viewCV')}

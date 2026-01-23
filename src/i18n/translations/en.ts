@@ -13,7 +13,7 @@ export const en = {
   hero: {
     title: 'Hi, my name is',
     subtitleTypewriter: {
-      opt1: 'Frontend Developer',
+      opt1: 'Frontend Web Developer',
       opt2: 'React Specialist',
       opt3: 'UX/UI Oriented Developer',
     },
@@ -22,6 +22,7 @@ export const en = {
       'Specialized in building clean, accessible, and high-performance interfaces using the MERN stack.',
     about: 'About me',
     viewCV: 'View CV',
+    cvUrl: '/CV-Agustin-Moya-EN.pdf',
   },
   about: {
     title: 'About Me',
@@ -35,21 +36,21 @@ export const en = {
     knowledgeEducation: 'Education',
     experience: [
       {
-        title: 'Frontend Developer',
+        title: 'Fullstack Web Developer (Frontend Oriented)',
         company: 'Independent Development',
         period: 'December 2024 to Present',
         description:
           "Developed 'EvenTask', a collaborative task, event and calendar manager featuring real-time notifications and instant updates for seamless user interaction.",
       },
       {
-        title: 'Frontend Developer (Fullstack Duties)',
+        title: 'Fullstack Web Developer (Frontend Oriented)',
         company: 'SanCor Salud - Grupo de Medicina Privada',
         period: 'September 2022 to December 2024',
         description:
           'Developed scalable solutions and refactored legacy code in a collaborative agile environment. Actively promoted code quality through daily code reviews and knowledge sharing with peers.',
       },
       {
-        title: 'Fullstack Developer',
+        title: 'Fullstack Web Developer',
         company: 'ADEN Business School',
         period: 'November 2021 to September 2022',
         description:
@@ -72,7 +73,7 @@ export const en = {
           'Strong foundation in algorithms, data structures, and software engineering principles. Comprehensive training in logic resolution and application architecture.',
       },
       {
-        title: 'Frontend Specialization',
+        title: 'Frontend Web Specialization',
         institution: 'Potrero Digital',
         period: 'September 2021 - December 2021',
         description:
@@ -123,7 +124,7 @@ export const en = {
         id: 'project-2',
         title: 'High Performance Portfolio',
         description:
-          'A fully responsive portfolio built with vanilla technologies to maximize performance metrics (Core Web Vitals) and semantic HTML structure.',
+          'A fully responsive portfolio developed with HTML, CSS, and Vanilla JavaScript, optimized to maximize performance metrics (Core Web Vitals) and semantic HTML structure.',
         image: projectPFDeportivo,
         tags: ['HTML', 'CSS', 'JavaScript'],
         demoUrl: 'https://portfolio-pedro-cazorla.netlify.app/',
@@ -133,7 +134,8 @@ export const en = {
   },
   contact: {
     title: 'Get in Touch',
-    description: "Looking for a Frontend Developer aimed at quality and UX? Let's talk.",
+    description:
+      "Looking for a Frontend Web Developer aimed at quality and UX? Let's talk.",
     name: 'Your name',
     email: 'Your email',
     message: 'Message',

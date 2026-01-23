@@ -13,7 +13,7 @@ export const es = {
   hero: {
     title: 'Hola, mi nombre es',
     subtitleTypewriter: {
-      opt1: 'Desarrollador Frontend',
+      opt1: 'Desarrollador Web Frontend',
       opt2: 'Especialista en React',
       opt3: 'Desarrollador Orientado a UX/UI',
     },
@@ -22,11 +22,12 @@ export const es = {
       'Especializado en construir interfaces limpias, accesibles y de alto rendimiento utilizando el stack MERN.',
     about: 'Sobre mí',
     viewCV: 'Ver CV',
+    cvUrl: '/CV-Agustin-Moya-ES.pdf',
   },
   about: {
     title: 'Sobre Mí',
     presentation: {
-      p1: 'Soy Desarrollador Frontend con más de cuatro años de experiencia en desarrollo web, especializado en React, TypeScript y arquitecturas de UI modernas.',
+      p1: 'Soy Desarrollador Frontend con más de cuatro años de experiencia en desarrollo web especializado en React, TypeScript y arquitecturas de UI modernas.',
       p2: 'Traduzco el diseño a código, creando interfaces de usuario funcionales y accesibles que siguen las mejores prácticas.',
     },
     technologies: 'Tecnologías',
@@ -35,21 +36,21 @@ export const es = {
     knowledgeEducation: 'Educación',
     experience: [
       {
-        title: 'Desarrollador Frontend',
+        title: 'Desarrollador Web Fullstack (Orientado al Frontend)',
         company: 'Desarrollo Independiente',
         period: 'Diciembre 2024 al Presente',
         description:
           "Desarrollo de 'EvenTask', un gestor colaborativo de tareas, eventos y calendario que integra notificaciones en tiempo real y actualizaciones instantáneas para una interacción de usuario fluida.",
       },
       {
-        title: 'Desarrollador Frontend (Tareas Fullstack)',
+        title: 'Desarrollador Web Fullstack (Orientado al Frontend)',
         company: 'SanCor Salud - Grupo de Medicina Privada',
         period: 'Septiembre 2022 a Diciembre 2024',
         description:
           'Desarrollo de soluciones escalables y refactorización de código heredado en un entorno ágil y colaborativo. Promoción activa de la calidad del código a través de code reviews diarios e intercambio de conocimientos con el equipo.',
       },
       {
-        title: 'Desarrollador Fullstack',
+        title: 'Desarrollador Web Fullstack',
         company: 'ADEN Business School',
         period: 'Noviembre 2021 a Septiembre 2022',
         description:
@@ -72,7 +73,7 @@ export const es = {
           'Sólida base en algoritmos, estructuras de datos y principios de ingeniería de software. Formación integral en resolución lógica y arquitectura de aplicaciones.',
       },
       {
-        title: 'Especialización Frontend',
+        title: 'Especialización Web Frontend',
         institution: 'Potrero Digital',
         period: 'Septiembre 2021 - Diciembre 2021',
         description:
@@ -123,7 +124,7 @@ export const es = {
         id: 'project-2',
         title: 'Portfolio de Alto Rendimiento',
         description:
-          'Un portfolio totalmente responsivo construido con tecnologías vanilla para maximizar las métricas de rendimiento (Core Web Vitals) y la estructura HTML semántica.',
+          'Un portfolio totalmente responsivo desarrollado con HTML, CSS y JavaScript puro, optimizado para maximizar las métricas de rendimiento (Core Web Vitals) y la semántica web.',
         image: projectPFDeportivo,
         tags: ['HTML', 'CSS', 'JavaScript'],
         demoUrl: 'https://portfolio-pedro-cazorla.netlify.app/',
@@ -134,7 +135,7 @@ export const es = {
   contact: {
     title: 'Ponte en Contacto',
     description:
-      '¿Buscas un Desarrollador Frontend enfocado en la calidad y la UX? Hablemos.',
+      '¿Buscas un Desarrollador Web Frontend enfocado en la calidad y la UX? Hablemos.',
     name: 'Tu nombre',
     email: 'Tu email',
     message: 'Mensaje',
@@ -148,6 +149,6 @@ export const es = {
   footer: {
     year: '2026',
     contact: 'Conecta conmigo:',
-    creator: 'Diseñado y Desarrollado por Agustin Moya.',
+    creator: 'Diseñado y desarrollado por Agustin Moya.',
   },
 }
