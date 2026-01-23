@@ -8,6 +8,7 @@ import {
   GitIcon,
   Html5Icon,
   MaterialDesignIcon,
+  MongoDBIcon,
   NodeJsIcon,
   ReactIcon,
   StorybookIcon,
@@ -32,6 +33,7 @@ export const Skills = () => {
     { name: 'Figma', icon: <FigmaIcon /> },
     { name: 'Node.js', icon: <NodeJsIcon /> },
     { name: 'Express', icon: <ExpressIcon /> },
+    { name: 'MongoDB', icon: <MongoDBIcon /> },
   ]
 
   return (
