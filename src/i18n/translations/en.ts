@@ -13,13 +13,13 @@ export const en = {
   hero: {
     title: 'Hi, my name is',
     subtitleTypewriter: {
-      opt1: 'Frontend Web Developer',
-      opt2: 'React Specialist',
+      opt1: 'Web Developer',
+      opt2: 'React, TypeScript & Node.js',
       opt3: 'UX/UI Oriented Developer',
     },
     contact: 'Contact me',
     description:
-      'Specialized in building clean, accessible, and high-performance interfaces using the MERN stack.',
+      'Specialized in building clean, accessible, and high-performance applications using the MERN stack.',
     about: 'About me',
     viewCV: 'View CV',
     cvUrl: '/CV-Agustin-Moya-EN.pdf',
@@ -27,8 +27,8 @@ export const en = {
   about: {
     title: 'About Me',
     presentation: {
-      p1: 'I am a Frontend Developer with over four years of experience in web development, specializing in React, TypeScript, and modern UI architectures.',
-      p2: 'I translate design into code, creating functional and accessible user interfaces that follow best practices.',
+      p1: 'I am a Web Developer with over four years of experience, specializing in building scalable web applications using React, Node.js, and TypeScript.',
+      p2: 'I translate ideas into code, creating functional, accessible, and high-performance solutions that follow modern architecture best practices.',
     },
     technologies: 'Technologies',
     knowledgeTitle: 'Knowledge & Background',
@@ -36,14 +36,14 @@ export const en = {
     knowledgeEducation: 'Education',
     experience: [
       {
-        title: 'Fullstack Web Developer (Frontend Oriented)',
+        title: 'Fullstack Web Developer',
         company: 'Independent Development',
         period: 'December 2024 to Present',
         description:
-          "Developed 'EvenTask', a collaborative task, event and calendar manager featuring real-time notifications and instant updates for seamless user interaction.",
+          "Developed 'EvenTask', a collaborative task, event and calendar manager featuring real-time notifications (WebSockets) and instant updates for seamless user interaction.",
       },
       {
-        title: 'Fullstack Web Developer (Frontend Oriented)',
+        title: 'Fullstack Web Developer',
         company: 'SanCor Salud - Grupo de Medicina Privada',
         period: 'September 2022 to December 2024',
         description:
@@ -63,7 +63,7 @@ export const en = {
         institution: 'Udemy',
         period: '2022 - Present',
         description:
-          'Continuous learning resource used for reference, deepening knowledge, and keeping up with framework updates.',
+          'Continuous learning resource used for reference, deepening knowledge in React, Node.js, and modern libraries.',
       },
       {
         title: 'University Technician in Programming',
@@ -104,7 +104,7 @@ export const en = {
         id: 'project-1',
         title: 'EvenTask App',
         description:
-          'A productivity app featuring JWT authentication, real-time notifications via WebSockets, and a custom UI system built from scratch using React and CSS Modules.',
+          'A productivity app featuring JWT authentication, real-time notifications via WebSockets, and a custom UI system built from scratch using React, Node.js, and MongoDB.',
         image: projectEvenTaskImg,
         tags: [
           'HTML',
@@ -134,8 +134,7 @@ export const en = {
   },
   contact: {
     title: 'Get in Touch',
-    description:
-      "Looking for a Frontend Web Developer aimed at quality and UX? Let's talk.",
+    description: "Looking for a Web Developer focused on quality and UX? Let's talk.",
     name: 'Your name',
     email: 'Your email',
     message: 'Message',

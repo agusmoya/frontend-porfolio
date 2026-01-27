@@ -13,13 +13,13 @@ export const es = {
   hero: {
     title: 'Hola, mi nombre es',
     subtitleTypewriter: {
-      opt1: 'Desarrollador Web Frontend',
-      opt2: 'Especialista en React',
+      opt1: 'Desarrollador Web',
+      opt2: 'React, TypeScript y Node.js',
       opt3: 'Desarrollador Orientado a UX/UI',
     },
     contact: 'Contáctame',
     description:
-      'Especializado en construir interfaces limpias, accesibles y de alto rendimiento utilizando el stack MERN.',
+      'Especializado en construir aplicaciones limpias, accesibles y de alto rendimiento utilizando el stack MERN.',
     about: 'Sobre mí',
     viewCV: 'Ver CV',
     cvUrl: '/CV-Agustin-Moya-ES.pdf',
@@ -27,8 +27,8 @@ export const es = {
   about: {
     title: 'Sobre Mí',
     presentation: {
-      p1: 'Soy Desarrollador Frontend con más de cuatro años de experiencia en desarrollo web especializado en React, TypeScript y arquitecturas de UI modernas.',
-      p2: 'Traduzco el diseño a código, creando interfaces de usuario funcionales y accesibles que siguen las mejores prácticas.',
+      p1: 'Soy Desarrollador Web con más de cuatro años de experiencia, especializado en construir aplicaciones web escalables utilizando React, Node.js y TypeScript.',
+      p2: 'Traduzco ideas en código, creando soluciones funcionales, accesibles y de alto rendimiento que siguen las mejores prácticas de arquitectura moderna.',
     },
     technologies: 'Tecnologías',
     knowledgeTitle: 'Conocimientos y Antecedentes',
@@ -36,14 +36,14 @@ export const es = {
     knowledgeEducation: 'Educación',
     experience: [
       {
-        title: 'Desarrollador Web Fullstack (Orientado al Frontend)',
+        title: 'Desarrollador Web Fullstack',
         company: 'Desarrollo Independiente',
         period: 'Diciembre 2024 al Presente',
         description:
-          "Desarrollo de 'EvenTask', un gestor colaborativo de tareas, eventos y calendario que integra notificaciones en tiempo real y actualizaciones instantáneas para una interacción de usuario fluida.",
+          "Desarrollo de 'EvenTask', un gestor colaborativo de tareas, eventos y calendario que integra notificaciones en tiempo real (WebSockets) y actualizaciones instantáneas para una interacción de usuario fluida.",
       },
       {
-        title: 'Desarrollador Web Fullstack (Orientado al Frontend)',
+        title: 'Desarrollador Web Fullstack',
         company: 'SanCor Salud - Grupo de Medicina Privada',
         period: 'Septiembre 2022 a Diciembre 2024',
         description:
@@ -63,7 +63,7 @@ export const es = {
         institution: 'Udemy',
         period: '2022 - Presente',
         description:
-          'Recurso de aprendizaje continuo utilizado como referencia para profundizar conocimientos y mantenerse al día con las actualizaciones del framework.',
+          'Recurso de aprendizaje continuo utilizado como referencia para profundizar conocimientos en React, Node.js y librerías modernas.',
       },
       {
         title: 'Tecnicatura Universitaria en Programación',
@@ -104,7 +104,7 @@ export const es = {
         id: 'project-1',
         title: 'App EvenTask',
         description:
-          'Una aplicación de productividad que cuenta con autenticación JWT, notificaciones en tiempo real vía WebSockets y un sistema de UI personalizado construido desde cero con React y CSS Modules.',
+          'Una aplicación de productividad que cuenta con autenticación JWT, notificaciones en tiempo real vía WebSockets y un sistema de UI personalizado construido desde cero con React, Node.js y MongoDB.',
         image: projectEvenTaskImg,
         tags: [
           'HTML',
@@ -134,8 +134,7 @@ export const es = {
   },
   contact: {
     title: 'Ponte en Contacto',
-    description:
-      '¿Buscas un Desarrollador Web Frontend enfocado en la calidad y la UX? Hablemos.',
+    description: '¿Buscas un Desarrollador Web enfocado en la calidad y la UX? Hablemos.',
     name: 'Tu nombre',
     email: 'Tu email',
     message: 'Mensaje',
