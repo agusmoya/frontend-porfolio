@@ -13,13 +13,13 @@ export const en = {
   hero: {
     title: 'Hi, my name is',
     subtitleTypewriter: {
-      opt1: 'Web Developer',
-      opt2: 'React, TypeScript & Node.js',
-      opt3: 'UX/UI Oriented Developer',
+      opt1: 'Frontend Engineer',
+      opt2: 'React, TypeScript & UX/UI',
+      opt3: 'MERN Stack Architecture',
     },
     contact: 'Contact me',
     description:
-      'Specialized in building clean, accessible, and high-performance applications using the MERN stack.',
+      'Building scalable web applications with a strong focus on User Experience, Accessibility, and robust code architecture using the MERN stack.',
     about: 'About me',
     viewCV: 'View CV',
     cvUrl: '/CV-Agustin-Moya-EN.pdf',
@@ -27,8 +27,8 @@ export const en = {
   about: {
     title: 'About Me',
     presentation: {
-      p1: 'I am a Web Developer with over four years of experience, specializing in building scalable web applications using React, Node.js, and TypeScript.',
-      p2: 'I translate ideas into code, creating functional, accessible, and high-performance solutions that follow modern architecture best practices.',
+      p1: 'I am a product-minded Frontend Engineer with over four years of experience. While my primary focus is mastering the React ecosystem and TypeScript, I possess the Fullstack expertise (MERN) needed to build complete, scalable solutions.',
+      p2: 'I integrate design and development, creating functional, high-performance applications that follow modern architecture best practices.',
     },
     technologies: 'Technologies',
     knowledgeTitle: 'Knowledge & Background',
@@ -40,21 +40,21 @@ export const en = {
         company: 'Independent Development',
         period: 'December 2024 to Present',
         description:
-          "Developed 'EvenTask', a collaborative task, event and calendar manager featuring real-time notifications (WebSockets) and instant updates for seamless user interaction.",
+          "Architected and developed 'EvenTask', a SaaS platform for collaborative task management. Implemented a custom UI system based on Material Design 3 and ensured real-time data synchronization.",
       },
       {
         title: 'Fullstack Web Developer',
         company: 'SanCor Salud - Grupo de Medicina Privada',
         period: 'September 2022 to December 2024',
         description:
-          'Developed scalable solutions and refactored legacy code in a collaborative agile environment. Actively promoted code quality through daily code reviews and knowledge sharing with peers.',
+          'Developed scalable frontend solutions and refactored legacy code in an Agile environment. Focused on code quality, performance optimization, and mentoring peers through code reviews.',
       },
       {
         title: 'Fullstack Web Developer',
         company: 'ADEN Business School',
         period: 'November 2021 to September 2022',
         description:
-          'Collaborated with cross-functional teams (Accounting, Certification) to analyze requirements and develop custom solutions that optimized internal business processes.',
+          'Collaborated with cross-functional teams to translate complex business requirements into custom web solutions that optimized internal processes.',
       },
     ],
     education: [
@@ -63,7 +63,7 @@ export const en = {
         institution: 'Udemy',
         period: '2022 - Present',
         description:
-          'Continuous learning resource used for reference, deepening knowledge in React, Node.js, and modern libraries.',
+          'Continuous learning resource used for reference, deepening knowledge in React, Node.js, Redux Toolkit, and modern architecture patterns.',
       },
       {
         title: 'University Technician in Programming',
@@ -102,15 +102,15 @@ export const en = {
     items: [
       {
         id: 'project-1',
-        title: 'EvenTask App',
+        title: 'EvenTask - SaaS Platform',
         description:
-          'A productivity app featuring JWT authentication, real-time notifications via WebSockets, and a custom UI system built from scratch using React, Node.js, and MongoDB.',
+          'A productivity SaaS featuring a custom Material Design 3 UI, Redux Toolkit (RTK Query) for efficient state management, and a robust Node.js backend with JWT authentication and WebSockets.',
         image: projectEvenTaskImg,
         tags: [
-          'HTML',
-          'CSS',
           'React',
           'TypeScript',
+          'Redux Toolkit',
+          'Material Design 3',
           'Node.js',
           'Express',
           'Socket.io',
@@ -124,9 +124,9 @@ export const en = {
         id: 'project-2',
         title: 'High Performance Portfolio',
         description:
-          'A fully responsive portfolio developed with HTML, CSS, and Vanilla JavaScript, optimized to maximize performance metrics (Core Web Vitals) and semantic HTML structure.',
+          'A fully responsive portfolio developed with semantic HTML, CSS, and Vanilla JavaScript. Optimized for Core Web Vitals to achieve maximum performance scores.',
         image: projectPFDeportivo,
-        tags: ['HTML', 'CSS', 'JavaScript'],
+        tags: ['HTML', 'CSS', 'JavaScript', 'Design'],
         demoUrl: 'https://portfolio-pedro-cazorla.netlify.app/',
         repoFrontendUrl: 'https://github.com/agusmoya/portfolio-pedro-cazorla',
       },
@@ -134,7 +134,7 @@ export const en = {
   },
   contact: {
     title: 'Get in Touch',
-    description: "Looking for a Web Developer focused on quality and UX? Let's talk.",
+    description: "Looking for a Product-Minded Frontend Engineer? Let's talk.",
     name: 'Your name',
     email: 'Your email',
     message: 'Message',

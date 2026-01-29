@@ -13,13 +13,13 @@ export const es = {
   hero: {
     title: 'Hola, mi nombre es',
     subtitleTypewriter: {
-      opt1: 'Desarrollador Web',
-      opt2: 'React, TypeScript y Node.js',
-      opt3: 'Desarrollador Orientado a UX/UI',
+      opt1: 'Ingeniero Frontend',
+      opt2: 'React, TypeScript y UX/UI',
+      opt3: 'Arquitectura Stack MERN',
     },
     contact: 'Contáctame',
     description:
-      'Especializado en construir aplicaciones limpias, accesibles y de alto rendimiento utilizando el stack MERN.',
+      'Desarrollo aplicaciones web escalables con un fuerte enfoque en la Experiencia de Usuario, Accesibilidad y una arquitectura de código robusta utilizando el stack MERN.',
     about: 'Sobre mí',
     viewCV: 'Ver CV',
     cvUrl: '/CV-Agustin-Moya-ES.pdf',
@@ -27,8 +27,8 @@ export const es = {
   about: {
     title: 'Sobre Mí',
     presentation: {
-      p1: 'Soy Desarrollador Web con más de cuatro años de experiencia, especializado en construir aplicaciones web escalables utilizando React, Node.js y TypeScript.',
-      p2: 'Traduzco ideas en código, creando soluciones funcionales, accesibles y de alto rendimiento que siguen las mejores prácticas de arquitectura moderna.',
+      p1: 'Soy un Ingeniero Frontend con visión de producto y más de cuatro años de experiencia. Aunque mi foco principal es dominar el ecosistema React y TypeScript, cuento con la experiencia Fullstack (MERN) necesaria para construir soluciones completas y escalables.',
+      p2: 'Integro diseño y desarrollo, creando aplicaciones funcionales y de alto rendimiento que siguen las mejores prácticas de arquitectura moderna.',
     },
     technologies: 'Tecnologías',
     knowledgeTitle: 'Conocimientos y Antecedentes',
@@ -40,21 +40,21 @@ export const es = {
         company: 'Desarrollo Independiente',
         period: 'Diciembre 2024 al Presente',
         description:
-          "Desarrollo de 'EvenTask', un gestor colaborativo de tareas, eventos y calendario que integra notificaciones en tiempo real (WebSockets) y actualizaciones instantáneas para una interacción de usuario fluida.",
+          "Diseñé la arquitectura y desarrollé 'EvenTask', una plataforma SaaS para la gestión colaborativa de tareas. Implementé un sistema de UI personalizado basado en Material Design 3 y aseguré la sincronización de datos en tiempo real.",
       },
       {
         title: 'Desarrollador Web Fullstack',
         company: 'SanCor Salud - Grupo de Medicina Privada',
         period: 'Septiembre 2022 a Diciembre 2024',
         description:
-          'Desarrollo de soluciones escalables y refactorización de código heredado en un entorno ágil y colaborativo. Promoción activa de la calidad del código a través de code reviews diarios e intercambio de conocimientos con el equipo.',
+          'Desarrollé soluciones frontend escalables y refactoricé código heredado en un entorno ágil. Me enfoqué en la calidad del código, optimización del rendimiento y mentoría a pares a través de code reviews.',
       },
       {
         title: 'Desarrollador Web Fullstack',
         company: 'ADEN Business School',
         period: 'Noviembre 2021 a Septiembre 2022',
         description:
-          'Colaboración con equipos interdisciplinarios (Contabilidad, Certificación) para analizar requerimientos y desarrollar soluciones a medida que optimizaron los procesos internos del negocio.',
+          'Colaboré con equipos interdisciplinarios para traducir requerimientos de negocio complejos en soluciones web a medida que optimizaron los procesos internos.',
       },
     ],
     education: [
@@ -63,7 +63,7 @@ export const es = {
         institution: 'Udemy',
         period: '2022 - Presente',
         description:
-          'Recurso de aprendizaje continuo utilizado como referencia para profundizar conocimientos en React, Node.js y librerías modernas.',
+          'Recurso de aprendizaje continuo utilizado como referencia para profundizar conocimientos en React, Node.js, Redux Toolkit y patrones de arquitectura moderna.',
       },
       {
         title: 'Tecnicatura Universitaria en Programación',
@@ -102,15 +102,15 @@ export const es = {
     items: [
       {
         id: 'project-1',
-        title: 'App EvenTask',
+        title: 'EvenTask - Plataforma SaaS',
         description:
-          'Una aplicación de productividad que cuenta con autenticación JWT, notificaciones en tiempo real vía WebSockets y un sistema de UI personalizado construido desde cero con React, Node.js y MongoDB.',
+          'Un SaaS de productividad con UI personalizada (Material Design 3), gestión de estado eficiente con Redux Toolkit (RTK Query) y un backend robusto en Node.js con autenticación JWT y WebSockets.',
         image: projectEvenTaskImg,
         tags: [
-          'HTML',
-          'CSS',
           'React',
           'TypeScript',
+          'Redux Toolkit',
+          'Material Design 3',
           'Node.js',
           'Express',
           'Socket.io',
@@ -124,7 +124,7 @@ export const es = {
         id: 'project-2',
         title: 'Portfolio de Alto Rendimiento',
         description:
-          'Un portfolio totalmente responsivo desarrollado con HTML, CSS y JavaScript puro, optimizado para maximizar las métricas de rendimiento (Core Web Vitals) y la semántica web.',
+          'Un portfolio totalmente responsivo desarrollado con HTML semántico, CSS y JavaScript puro. Optimizado para Core Web Vitals para lograr puntajes máximos de rendimiento.',
         image: projectPFDeportivo,
         tags: ['HTML', 'CSS', 'JavaScript'],
         demoUrl: 'https://portfolio-pedro-cazorla.netlify.app/',
@@ -134,7 +134,7 @@ export const es = {
   },
   contact: {
     title: 'Ponte en Contacto',
-    description: '¿Buscas un Desarrollador Web enfocado en la calidad y la UX? Hablemos.',
+    description: '¿Buscas un Ingeniero Frontend con visión de producto? Hablemos.',
     name: 'Tu nombre',
     email: 'Tu email',
     message: 'Mensaje',
