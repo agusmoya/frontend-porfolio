@@ -138,7 +138,19 @@
 
 .cardHeader {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.cardTitle {
+  font-weight: var(--font-weight-6);
+  line-height: var(--line-height-3);
+  font-size: var(--font-size-title-large);
+}
+
+.mobileMenuBtn {
+  flex-shrink: 0;
 }
 
 /* Hide mobile menu button on devices with hover capability (desktop) */
@@ -205,13 +217,6 @@
 
 .menuItem:active {
   transform: scale(2.98);
-}
-
-.cardTitle {
-  font-weight: var(--font-weight-6);
-  line-height: var(--line-height-3);
-  font-size: var(--font-size-title-large);
-  margin-bottom: var(--spacing-sm);
 }
 
 .cardDescription {
