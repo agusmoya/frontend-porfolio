@@ -123,70 +123,71 @@ export const CardProject = ({
       </div>
 
       <div className={styles.cardContent}>
-        <Button
-          variant="icon"
-          className={styles.mobileMenuBtn}
-          onClick={toggleMenu}
-          aria-label="Project options menu"
-          aria-expanded={isMenuOpen}
-          aria-haspopup="true"
-        >
-          <MoreOptionsIcon />
-        </Button>
+        <header className={styles.cardHeader}>
+          <h3 className={styles.cardTitle}>{title}</h3>
 
-        {isMenuOpen && (
-          <div ref={menuRef} className={styles.dropdownMenu} role="menu">
-            {demoUrl && (
-              <a
-                className={styles.menuItem}
-                href={demoUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                role="menuitem"
-                onClick={toggleMenu}
-              >
-                <ExternalLinkIcon />
-                <span>{t('projects.viewDemo')}</span>
-              </a>
-            )}
-            {repoBackendUrl && (
-              <a
-                className={styles.menuItem}
-                href={repoBackendUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                role="menuitem"
-                onClick={toggleMenu}
-              >
-                <GitHubIcon />
-                <span>{t('projects.viewCodeBackend')}</span>
-              </a>
-            )}
-            {repoFrontendUrl && (
-              <a
-                className={styles.menuItem}
-                href={repoFrontendUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                role="menuitem"
-                onClick={toggleMenu}
-              >
-                <GitHubIcon />
-                <span>{t('projects.viewCodeFrontend')}</span>
-              </a>
-            )}
-          </div>
-        )}
+          <Button
+            variant="icon"
+            className={styles.mobileMenuBtn}
+            onClick={toggleMenu}
+            aria-label="Project options menu"
+            aria-expanded={isMenuOpen}
+            aria-haspopup="true"
+          >
+            <MoreOptionsIcon />
+          </Button>
 
-        <h3 className={styles.cardTitle}>{title}</h3>
-        <p className={styles.cardDescription}>{description}</p>
-        <div className={styles.cardTags}>
+          {isMenuOpen && (
+            <div ref={menuRef} className={styles.dropdownMenu}>
+              {demoUrl && (
+                <a
+                  className={styles.menuItem}
+                  href={demoUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={toggleMenu}
+                >
+                  <ExternalLinkIcon />
+                  <span>{t('projects.viewDemo')}</span>
+                </a>
+              )}
+              {repoBackendUrl && (
+                <a
+                  className={styles.menuItem}
+                  href={repoBackendUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={toggleMenu}
+                >
+                  <GitHubIcon />
+                  <span>{t('projects.viewCodeBackend')}</span>
+                </a>
+              )}
+              {repoFrontendUrl && (
+                <a
+                  className={styles.menuItem}
+                  href={repoFrontendUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={toggleMenu}
+                >
+                  <GitHubIcon />
+                  <span>{t('projects.viewCodeFrontend')}</span>
+                </a>
+              )}
+            </div>
+          )}
+        </header>
+
+        <div className={styles.cardDescription}>{description}</div>
+
+        <footer className={styles.footer}>
           {tags.map((tag) => (
             <Badge key={tag} variant="outlined">
               {tag}
             </Badge>
           ))}
-        </div>
+        </footer>
       </div>
     </article>
   )

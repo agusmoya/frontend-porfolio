@@ -114,8 +114,6 @@
 
 .overlayButton:hover {
   background-color: transparent;
-  border-color: var(--color-on-surface);
-  color: var(--color-on-surface);
   transform: scale(var(--scale-grow-1));
 }
 
@@ -134,15 +132,13 @@
   flex-direction: column;
   justify-content: space-between;
   flex-grow: 1;
-  gap: var(--spacing-sm);
+  gap: var(--spacing-md-plus);
   padding: var(--spacing-lg);
 }
 
-.mobileMenuBtn {
-  position: absolute;
-  top: var(--spacing-md);
-  right: var(--spacing-md);
+.cardHeader {
   display: flex;
+  align-items: center;
 }
 
 /* Hide mobile menu button on devices with hover capability (desktop) */
@@ -224,9 +220,9 @@
   color: var(--color-on-surface-variant);
 }
 
-.cardTags {
+.footer {
   display: flex;
   flex-wrap: wrap;
   gap: var(--spacing-sm);
-  margin-top: var(--spacing-sm);
+  margin-top: auto;
 }
